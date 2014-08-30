@@ -38,12 +38,6 @@ Simply edit the styles in style.css. Just activate the plugin.
 2. Activate the plugin in Plugins page
 3. Enjoy your new style!
 
-== Screenshots ==
-
-1. Screenshot 1
-2. Screenshot 2
-3. Screenshot 3
-
 == Changelog ==
 
 = 1.0 =
