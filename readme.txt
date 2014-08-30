@@ -30,12 +30,6 @@ Just activate the plugin. The styles are automatically activated.
 
 Simply edit the styles in style.css. Just activate the plugin.
 
-== Screenshots ==
-
-1. Screenshot 1
-2. Screenshot 2
-3. Screenshot 3
-
 == Upgrade Notice ==
 
 = 1.0 =
@@ -43,6 +37,12 @@ Simply edit the styles in style.css. Just activate the plugin.
 1. Install the plugin
 2. Activate the plugin in Plugins page
 3. Enjoy your new style!
+
+== Screenshots ==
+
+1. Screenshot 1
+2. Screenshot 2
+3. Screenshot 3
 
 == Installation ==
 
