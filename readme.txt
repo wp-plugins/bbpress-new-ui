@@ -38,17 +38,17 @@ Simply edit the styles in style.css. Just activate the plugin.
 2. Activate the plugin in Plugins page
 3. Enjoy your new style!
 
-== Screenshots ==
-
-1. Screenshot 1
-2. Screenshot 2
-3. Screenshot 3
-
 == Installation ==
 
 1. Install the plugin
 2. Activate the plugin in Plugins page
 3. Enjoy your new style!
+
+== Screenshots ==
+
+1. Screenshot 1
+2. Screenshot 2
+3. Screenshot 3
 
 == Changelog ==
 = 1.1 =
@@ -56,6 +56,7 @@ Simply edit the styles in style.css. Just activate the plugin.
 * Added features
 * Added Screenshots 
 * Fixed a bug and added compatibility with bbPress admin replies!
+
 = 1.0 =
 
 * The plugin created!
