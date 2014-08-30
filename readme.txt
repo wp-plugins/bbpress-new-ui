@@ -1,4 +1,4 @@
-=== bbPress - Admin Replies===
+=== bbPress - New UI ===
 Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, Snusmoomrik
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Snusmoomrik, Forum
