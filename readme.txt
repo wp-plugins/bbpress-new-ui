@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, Snusmoomrik
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Snusmoomrik, Forum
 Requires at least: 3.2
-Tested up to: 4.0-beta4
+Tested up to: 4.0-RC1
 Stable Tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
