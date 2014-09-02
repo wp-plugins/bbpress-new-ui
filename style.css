@@ -228,7 +228,6 @@ media screen
     margin-bottom: 5px !important;
     overflow: hidden !important;
     padding: 20px 15px 15px !important;
-    background: #fff !important;
     color: #000 !important;
 }
 #bbpress-forums div.bbp-topic-author a.bbp-author-name, #bbpress-forums div.bbp-reply-author a.bbp-author-name {
@@ -288,8 +287,7 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header {
     margin-bottom: 5px !important;
     overflow: hidden !important;
     padding: 20px 15px 15px !important;
-    background: #fff !important;
-    color: #000 !important;
+    color: #fff !important;
 }
 
 /*media screen*/
@@ -429,4 +427,47 @@ media screen #bbpress-forums div.bbp-forum-content, #bbpress-forums div.bbp-topi
     margin: 2px !important;
     border: 0 !important;
     box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 3px 4px -3px rgba(0,0,0,0.3) !important;
+}
+.avatar {
+    border-radius: 10px;
+}
+/*media screen*/
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer {
+    background: #252b33 !important;
+    color: #ddd !important;
+}
+div.bbp-template-notice {
+    background: url('http://battle-fields.ru/.s/t/984/1.gif') #191919 !important;
+    color: #f1cc9c !important;
+    border: 1px solid #494949 !important;
+}
+/*media screen*/
+div.bbp-template-notice a {
+    color: #e16405 !important;
+}
+/*media all*/
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    background: rgba(32, 35, 38, 1) !important;
+}
+/*media all*/
+#bbpress-forums .status-closed, #bbpress-forums .status-closed a {
+    color: #ff6e00 !important;
+}
+.bbp-topic-title a {
+    color: #ff6e00 !important;
+}
+
+.bbp-forum-info a {
+    color: #ff6e00 !important;
+}
+.bbp-forum-freshness a {
+    color: #ff6e00 !important;
+}
+/*media screen*/
+#bbpress-forums .bbp-forum-info .bbp-forum-content, #bbpress-forums p.bbp-topic-meta {
+    border: 0px !important;
+}
+/*media all*/
+li.bbp-forum-freshness a, li.bbp-topic-freshness a {
+    color: #ff6e00 !important;
 }
