@@ -4,7 +4,7 @@ Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Snusmoomrik, Forum
 Requires at least: 3.2
 Tested up to: 4.0
-Stable Tag: 1.3
+Stable Tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,13 +51,14 @@ Simply edit the styles in style.css. Just activate the plugin.
 3. Screenshot 3
 
 == Changelog ==
-= 1.3 =
+= 1.3.1 =
 
 * Added a stroke around all the counters in the list of review topics, not just forums
 * Some changes with a small avatar
 * Created the img folder
 * Added padding between the replies
 * Many small fixes and improvements on the occasion of the release of version 4.0
+* Revised and reissued version 1.3
 
 = 1.2 =
 

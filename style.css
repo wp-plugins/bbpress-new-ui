@@ -320,7 +320,7 @@ li.bbp-forum-info, li.bbp-topic-title {
     color: #ddd !important;
 }
 #bbpress-forums .status-closed a.bbp-topic-permalink {
-    background: url(..img/locked-icon-white.png) no-repeat no-repeat !important;
+    background: url(../img/locked-icon-white.png) no-repeat no-repeat !important;
     content: "\f450" !important;
     padding-left: 20px !important;
 }
