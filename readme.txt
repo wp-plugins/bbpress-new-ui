@@ -51,6 +51,7 @@ Simply edit the styles in style.css. Just activate the plugin.
 3. Screenshot 3
 
 == Changelog ==
+
 = 1.3.1 =
 
 * Added a stroke around all the counters in the list of review topics, not just forums
@@ -59,6 +60,10 @@ Simply edit the styles in style.css. Just activate the plugin.
 * Added padding between the replies
 * Many small fixes and improvements on the occasion of the release of version 4.0
 * Revised and reissued version 1.3
+
+= 1.3 =
+
+* Broken release
 
 = 1.2 =
 
