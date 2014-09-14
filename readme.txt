@@ -59,7 +59,7 @@ Simply edit the styles in style.css. Just activate the plugin.
 
 == Changelog ==
 
-=1.4=
+= 1.4 =
 
 * Added border for the role of the author
 
