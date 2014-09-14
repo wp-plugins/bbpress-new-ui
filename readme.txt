@@ -1,10 +1,10 @@
-=== bbPress - New UI ===
+=== bbPress - New UI (Dark color) ===
 Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000
-Tags: bbPress, new UI, UI, Forums, daniluk4000, Snusmoomrik, Forum
+Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum
 Requires at least: 3.2
 Tested up to: 4.0
-Stable Tag: 1.3.1
+Stable Tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,9 +17,16 @@ A great plugin that changes the interface of the forum: now he looks beautiful, 
 Features:
 
 Redesigned a reply form (Screenshot 1)
+  
 New, elegant dark color (Screenshot 2)
+  
 Closed and fastened themes are highlighted with a special icon (Screenshot 3)
+  
 Many changes aimed at improving the use of the forum.
+  
+Very soon: plugin with light color
+
+
 == Frequently Asked Questions ==
 
 = How do I activate a new style? =
@@ -52,6 +59,10 @@ Simply edit the styles in style.css. Just activate the plugin.
 
 == Changelog ==
 
+=1.4=
+
+* Added border for the role of the author
+
 = 1.3.1 =
 
 * Added a stroke around all the counters in the list of review topics, not just forums
@@ -60,10 +71,6 @@ Simply edit the styles in style.css. Just activate the plugin.
 * Added padding between the replies
 * Many small fixes and improvements on the occasion of the release of version 4.0
 * Revised and reissued version 1.3
-
-= 1.3 =
-
-* Broken release
 
 = 1.2 =
 
