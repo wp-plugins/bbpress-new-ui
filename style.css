@@ -996,5 +996,25 @@ li.bbp-forum-freshness a, li.bbp-topic-freshness a {
 #bbpress-forums div.bbp-forum-author .bbp-author-role, #bbpress-forums div.bbp-topic-author .bbp-author-role, #bbpress-forums div.bbp-reply-author .bbp-author-role {
     border: 1px solid !important;
     margin-left: 1px !important;
-    border-left: 0px !important
+    border-left: 0px !important;
+}
+/*media screen*/
+#bbpress-forums div.bbp-the-content-wrapper input {
+    background: rgba(22, 25, 29, 1) !important;
+    color: #fff !important;
+}
+/*media all*/
+.quicktags-toolbar {
+    background: rgba(38, 44, 51, 1) !important;
+}
+/*media screen*/
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+    background: rgba(18, 21, 24, 1) !important;
+    color: #fff !important;
+}
+/*media all*/
+media screen #bbpress-forums fieldset.bbp-form p, #bbpress-forums fieldset.bbp-form textarea, #bbpress-forums fieldset.bbp-form select, #bbpress-forums fieldset.bbp-form input {
+    background: rgba(18, 21, 24, 1) !important;
+    color: #fff !important;
+    border: 0px !important;
 }

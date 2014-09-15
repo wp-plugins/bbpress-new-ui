@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: bbPress New UI (Dark color)
+Plugin Name: bbPress New UI (Dark)
 Description: A small plugin completely changes the entire design bbpress.
-Version: 1.4
+Version: 1.5
 Author: Daniel 4000
 Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, Snusmoomrik
