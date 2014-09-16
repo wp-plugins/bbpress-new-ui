@@ -1018,3 +1018,7 @@ media screen #bbpress-forums fieldset.bbp-form p, #bbpress-forums fieldset.bbp-f
     color: #fff !important;
     border: 0px !important;
 }
+/*media screen*/
+#bbpress-forums li {
+    padding: 0px !important;
+}

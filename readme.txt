@@ -4,7 +4,7 @@ Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum
 Requires at least: 3.2
 Tested up to: 4.0
-Stable Tag: 1.5
+Stable Tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ Simply edit the styles in style.css. Just activate the plugin.
 3. Screenshot 3
 
 == Changelog ==
+
+= 1.5.1 = 
+Bug fix
 
 = 1.5 =
 * New Screenshots
