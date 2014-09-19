@@ -1,30 +1,28 @@
 === bbPress - New UI (Dark) ===
 Author URI: http://vk.com/daniluk4000
-Contributors: daniluk4000
-Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum
+Contributors: daniluk4000, WPscript
+Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Requires at least: 3.2
 Tested up to: 4.0
-Stable Tag: 1.5.1
+Stable Tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This small plugin is almost completely changes the interface bbPress.
+A great plugin completely changes the entire design bbpress in light or dark color
 
 == Description ==
 
-A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark colors. The plugin supported the plugin "bbPress admin replies".
+A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin supported the plugin "bbPress admin replies".
 
 Features:
 
 Redesigned a reply form (Screenshot 1)
   
-New, elegant dark color (Screenshot 2)
+Great choice between dark/bright colors (Scheenshots two, three and four)
   
-Closed and fastened themes are highlighted with a special icon (Screenshot 3)
+Closed and fastened themes are highlighted with a special icon (Screenshot 5)
   
 Many changes aimed at improving the use of the forum.
-  
-Very soon: plugin with light color
 
 
 == Frequently Asked Questions ==
@@ -35,7 +33,7 @@ Just activate the plugin. The styles are automatically activated.
 
 = How can I change the style? =
 
-Simply edit the styles in style.css. Just activate the plugin.
+Find the tab "New bbPress UI" in the settings in the admin panel and select "switch color" or edit dark.css (this theme by default)
 
 == Upgrade Notice ==
 
@@ -53,14 +51,23 @@ Simply edit the styles in style.css. Just activate the plugin.
 
 == Screenshots ==
 
-1. Screenshot 1
-2. Screenshot 2
-3. Screenshot 3
+1. Redesigned a reply form
+2. Dark color
+3. Light color
+4. Plugin settings
+5. Closed and fastened themes are highlighted with a special icon
 
 == Changelog ==
 
+= 2.0 - great community release = 
+
+* I followed your advice and added a switch between the dark and light color, and light will be much further developed. Thank you for your feedback and support!
+* Avatars returned to its original size.
+* Fixed some bugs
+Hurray, hurray, hurray!
+
 = 1.5.1 = 
-Bug fix
+* Bug fix
 
 = 1.5 =
 * New Screenshots

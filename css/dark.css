@@ -178,10 +178,6 @@ media screen
     padding: 5px !important;
     float: right !important;
 }
-media screen #bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
-    max-width: 40px !important;
-    max-height: 40px !important;
-}
 media screen
 #bbpress-forums div.bbp-forum-content, #bbpress-forums div.bbp-topic-content, #bbpress-forums div.bbp-reply-content {
     margin-left: 140px !important;
@@ -1021,4 +1017,10 @@ media screen #bbpress-forums fieldset.bbp-form p, #bbpress-forums fieldset.bbp-f
 /*media screen*/
 #bbpress-forums li {
     padding: 0px !important;
+}
+/*media screen*/
+#bbpress-forums fieldset.bbp-form label {
+    margin: 0;
+    display: inline-block;
+    margin-left: 5px;
 }
