@@ -381,3 +381,12 @@ li.bbp-forum-freshness, li.bbp-topic-freshness {
 .bbp-footer {
     color: #eee;
 }
+/*media all*/
+.status-closed #bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3 {
+    background: url(../img/locked-icon-white.png) #f4f4f4 no-repeat 99% !important;
+}
+/*media screen*/
+#bbpress-forums fieldset.bbp-form legend {
+    padding: 5px;
+    background: #ddd !important;
+}

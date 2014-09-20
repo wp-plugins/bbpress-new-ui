@@ -1,10 +1,10 @@
-=== bbPress - New UI (Dark) ===
+=== bbPress - New UI ===
 Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Requires at least: 3.2
 Tested up to: 4.0
-Stable Tag: 1.6
+Stable Tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,11 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 5. Closed and fastened themes are highlighted with a special icon
 
 == Changelog ==
+
+= 2.0.1 =
+
+* Design fixes for Light color
+* Icon in page of closed topic
 
 = 2.0 - great community release = 
 

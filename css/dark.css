@@ -1024,3 +1024,7 @@ media screen #bbpress-forums fieldset.bbp-form p, #bbpress-forums fieldset.bbp-f
     display: inline-block;
     margin-left: 5px;
 }
+/*media all*/
+.status-closed #bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3 {
+    background: url(../img/locked-icon-white.png) #f4f4f4 no-repeat 99% !important;
+}
