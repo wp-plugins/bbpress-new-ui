@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 2.0.1
+Version: 2.1
 Author: Daniel 4000
 Author URI: https://profiles.wordpress.org/daniluk4000/
 Contributors: daniluk4000, WPscript

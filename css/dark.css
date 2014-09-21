@@ -80,11 +80,6 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header {
 }
 
 /*media screen*/
-#bbpress-forums div.odd, #bbpress-forums ul.odd {
-	background-color: #fbfbfb !important;
-}
-
-/*media screen*/
 #bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
 	font-size: 12px !important;
 	overflow: hidden !important;
@@ -210,9 +205,6 @@ media screen
     padding: 0 !important;
     text-align: left !important;
     background: transparent !important;
-}
-#bbpress-forums div.odd, #bbpress-forums ul.odd {
-    background-color: #fbfbfb !important;
 }
 #bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
     margin-bottom: 5px !important;
@@ -578,11 +570,6 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header {
 }
 
 /*media screen*/
-#bbpress-forums div.odd, #bbpress-forums ul.odd {
-	background-color: #fbfbfb !important;
-}
-
-/*media screen*/
 #bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
 	font-size: 12px !important;
 	overflow: hidden !important;
@@ -712,9 +699,6 @@ media screen
     padding: 0 !important;
     text-align: left !important;
     background: transparent !important;
-}
-#bbpress-forums div.odd, #bbpress-forums ul.odd {
-    background-color: #fbfbfb !important;
 }
 #bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
     margin-bottom: 5px !important;
@@ -1026,5 +1010,30 @@ media screen #bbpress-forums fieldset.bbp-form p, #bbpress-forums fieldset.bbp-f
 }
 /*media all*/
 .status-closed #bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3 {
-    background: url(../img/locked-icon-white.png) #f4f4f4 no-repeat 99% !important;
+    background: url(../img/locked-icon-white.png) #252b33 no-repeat 40% !important;
+}
+/*media screen*/
+#bbpress-forums fieldset.bbp-form legend {
+    padding: 5px;
+    background: #252b33 !important;
+}
+.page-numbers {
+    background: #252b33 !important;
+    color: #ddd !important;
+}
+
+#bbpress-forums div.odd, #bbpress-forums ul.odd {
+    color: #ddd !important;
+}
+
+/*media screen*/
+div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body div.hentry {
+    margin-bottom: 0px;
+    overflow: hidden;
+    padding: 0px !important;
+}
+/*media screen*/
+#bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header {
+
+    padding: 10px !important;
 }

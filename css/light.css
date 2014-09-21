@@ -266,10 +266,6 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header {
 #bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header {
     border: 1px solid #d0cfcd !important;
 }
-/*media screen*/
-#bbpress-forums div.even, #bbpress-forums ul.even {
-    background-color: #ddd !important;
-}
 /*media all*/
 #bbpress-forums div.bbp-forum-content, #bbpress-forums div.bbp-topic-content, #bbpress-forums div.bbp-reply-content {
     border-left: 1px solid #999 !important;
@@ -304,6 +300,14 @@ div.bbp-template-notice {
 /*media all*/
 #bbpress-forums div.odd, #bbpress-forums ul.odd {
     background-color: #fff !important;
+}
+/*media screen*/
+#bbpress-forums div.even, #bbpress-forums ul.even {
+    background-color: #ddd !important;
+}
+/*media all*/
+#bbpress-forums div.odd, #bbpress-forums ul.odd {
+    background-color: #ddd !important;
 }
 /*media all*/
 #bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
@@ -383,10 +387,18 @@ li.bbp-forum-freshness, li.bbp-topic-freshness {
 }
 /*media all*/
 .status-closed #bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3 {
-    background: url(../img/locked-icon-white.png) #f4f4f4 no-repeat 99% !important;
+    background: url(../img/locked-icon-white.png) #f4f4f4 no-repeat 40% !important;
 }
 /*media screen*/
 #bbpress-forums fieldset.bbp-form legend {
     padding: 5px;
     background: #ddd !important;
+}
+/*media screen*/
+div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body div.hentry {
+    padding: 0px !important;
+}
+/*media screen*/
+#bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header {
+    padding: 10px !important;
 }
