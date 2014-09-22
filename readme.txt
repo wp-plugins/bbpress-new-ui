@@ -58,7 +58,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 2.2 - First absolutely stable release 2.x
+= 2.2 - First absolutely stable release 2.x =
 * Fix for the fatal error when you activate the plugin - thank you, testers! I hope now you get the full pleasure from the plugin :D 
 * Fixed many bugs for dark and light color
 
