@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.0
-Stable Tag: 2.1
+Stable Tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,10 +34,6 @@ Just activate the plugin. The styles are automatically activated.
 
 Find the tab "New bbPress UI" in the settings in the admin panel and select "switch color" or edit dark.css (this theme by default)
 
-= For some reason I have a plugin causes a critical error. Why? =
-
-Most likely, it is because you are using an outdated version of PHP. We recommend you to upgrade to a new, or a download version 1.5.1 Final: https://downloads.wordpress.org/plugin/bbpress-new-ui.1.5.1.zip
-
 == Upgrade Notice ==
 
 = 1.0 =
@@ -61,6 +57,10 @@ Most likely, it is because you are using an outdated version of PHP. We recommen
 5. Closed and fastened themes are highlighted with a special icon
 
 == Changelog ==
+
+= 2.2 - First absolutely stable release 2.x
+* Fix for the fatal error when you activate the plugin - thank you, testers! I hope now you get the full pleasure from the plugin :D 
+* Fixed many bugs for dark and light color
 
 = 2.1 - big fixes bugs release =
 
