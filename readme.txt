@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.0
-Stable Tag: 2.2
+Stable Tag: 2.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,7 +58,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 2.2 - First absolutely stable release 2.x =
+= 2.2.0 - First absolutely stable release 2.x =
 * Fix for the fatal error when you activate the plugin - thank you, testers! I hope now you get the full pleasure from the plugin :D 
 * Fixed many bugs for dark and light color
 
