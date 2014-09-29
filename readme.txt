@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.0
-Stable Tag: 2.2.0
+Stable Tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,13 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 5. Closed and fastened themes are highlighted with a special icon
 
 == Changelog ==
+
+= 2.3 =
+
+* Added new icons for the form of creating topics/reply
+* Change color of signature text
+* All sorts of minor fixes
+* New Screenshots (1 and 3)
 
 = 2.2.0 - First absolutely stable release 2.x =
 * Fix for the fatal error when you activate the plugin - thank you, testers! I hope now you get the full pleasure from the plugin :D 
