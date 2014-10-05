@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.0
-Stable Tag: 2.3
+Stable Tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 5. Closed and fastened themes are highlighted with a special icon
 
 == Changelog ==
+
+= 2.3.1 =
+* Support for bbPress Admin Answers 2.0
+* Fixes for minor bugs
 
 = 2.3 =
 

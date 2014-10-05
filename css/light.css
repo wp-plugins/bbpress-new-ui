@@ -377,7 +377,7 @@ li.bbp-forum-freshness, li.bbp-topic-freshness {
     border-radius: 50px !important;
 }
 #bbpress-forums div.bbp-admin-reply {
-    background-color: rgba(22, 38, 63, 1) !important;
+    background-color: #bbb !important;
 }
 .bbp-footer {
     color: #eee;
@@ -552,5 +552,66 @@ span.bbp-admin-links a {
     padding: 10px;
     font-size: 16px !important;
     margin: 10px;
+    color: #ddd !important;
+}
+#bbpress-forums li.bbp-footer {
+    background: #f4f4f4 !important;
+    border: 1px solid #ddd !important;
+    color: #555 !important;
+}
+#bbpress-forums div.reply {
+    height: auto;
+    width: 100%;
+    border-left: 1px solid #d0cfcd;
+    border-right: 1px solid #d0cfcd;
+}
+/*media screen*/
+div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body div.hentry {
+    border-left: #d0cfcd 1px solid;
+    border-right: #d0cfcd 1px solid;
+}
+span.bbp-admin-links a {
+color: #bbb !important;
+}
+#bbpress-forums div.bbp-admin-topic {
+     background-color: rgba(22, 38, 63, 1) !important;
+}
+/*media all*/
+#bbpress-forums div.bbp-admin-topic {
+    background-color: rgba(22, 38, 63, 1) !important;
+}
+.bbp-admin-reply .topic-author a {
+    color: #fff !important;
+}
+.bbp-admin-reply .topic-author {
+    color: #ddd !important;
+}
+/*media all*/
+#bbpress-forums div.bbp-admin-reply {
+    color: #ddd !important;
+}
+#bbpress-forums div.bbp-admin-topic {
+    color: #ddd !important;
+}
+#bbpress-forums div.reply {
+    background-color: #ddd !important;
+    color: #333 !important;
+}
+#bbpress-forums div.bbp-admin-reply {
+    color: #ddd !important;
+}
+#bbpress-forums div.bbp-admin-topic {
+    background-color: rgba(22, 38, 63, 1) !important;
+    background: rgba(22, 38, 63, 1) !important;
+    color: #ddd !important;
+}
+#bbpress-forums div.reply {
+    background-color: #ddd !important;
+    background: #ddd !important;
+    color: #333 !important;
+}
+#bbpress-forums div.bbp-admin-reply {
+    background-color: rgba(22, 38, 63, 1) !important;
+    background: rgba(22, 38, 63, 1) !important;
     color: #ddd !important;
 }
