@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.0.1
-Stable Tag: 2.4
+Stable Tag: 2.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,8 +59,6 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 3. Light color
 4. Plugin settings
 5. Closed and fastened themes are highlighted with a special icon
-6. New styles for categories: now they look just fine
-7. The style for replies author
 
 == Changelog ==
 
