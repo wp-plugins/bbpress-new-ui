@@ -59,6 +59,8 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 3. Light color
 4. Plugin settings
 5. Closed and fastened themes are highlighted with a special icon
+6. New styles for categories: now they look just fine
+7. The style for replies author
 
 == Changelog ==
 
