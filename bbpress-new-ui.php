@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 2.3.1
+Version: 2.4
 Author: Daniel 4000
 Author URI: https://profiles.wordpress.org/daniluk4000/
 Contributors: daniluk4000, WPscript
@@ -17,12 +17,12 @@ public function register_plugin_styles() {
 $val = get_option('bbp_new_ui_option');
 $val = $val['checkbox'];
 if ( $val['checkbox'] == '1'){
-$css_path = plugin_dir_path( __FILE__ ) . '/css/light.css';
-wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/css/light.css', filemtime( $css_path ) );
-} 
-else {
 $css_path = plugin_dir_path( __FILE__ ) . '/css/dark.css';
 wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/css/dark.css', filemtime( $css_path ) );
+} 
+else {
+$css_path = plugin_dir_path( __FILE__ ) . '/css/light.css';
+wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/css/light.css', filemtime( $css_path ) );
 } 
 }
 } // end class
@@ -64,10 +64,10 @@ $val = $val['checkbox'];
 <label><input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val ) ?> /> change style</label> <br>
 <?php
 if ( $val['checkbox'] == '1'){
-echo "Now active light.css";
+echo "Now active dark.css";
 } 
 else {
-echo "Now active dark.css";
+echo "Now active light.css";
 }
 }
 
