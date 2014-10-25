@@ -220,11 +220,13 @@ media screen
     margin-bottom: 10px !important;
     border-bottom: 1px solid #ddd !important;
 }
-/*media screen*/
+/*media all*/
 #bbpress-forums div.bbp-the-content-wrapper {
     margin-bottom: 10px !important;
     border: 1px solid #ddd !important;
     margin: 5px !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
 }
 /*media screen*/
 #bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
@@ -711,11 +713,12 @@ media screen
     margin-bottom: 10px !important;
     border-bottom: 1px solid #ddd !important;
 }
-/*media screen*/
 #bbpress-forums div.bbp-the-content-wrapper {
     margin-bottom: 10px !important;
     border: 1px solid #ddd !important;
     margin: 5px !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
 }
 /*media screen*/
 #bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
@@ -1232,14 +1235,6 @@ padding: 10px !important;
     background: transparent !important;
     border: 0px !important;
 }
-#bbpress-forums div.topic-author {
-    border-left: 2px solid rgba(78, 170, 78, 1);
-    background: rgba(98, 120, 98, 1) !important;
-}
-
-div.topic-author .bbp-reply-content {
-    background: rgba(58, 90, 58, 1) !important;
-}
 
 #bbpress-forums div.topic-author div.bbp-author-role {
     background: url(../img/topic-author.png) repeat !important;
@@ -1297,7 +1292,10 @@ div.topic-author a {
     background-color: rgba(22, 38, 63, 1) !important;
     background: rgba(22, 38, 63, 1) !important;
 }
-/*media all*/
-#bbpress-forums div.topic-author .bbp-signature {
-    color: #ddd !important;
+#bbpress-forums div.bbp-the-content-wrapper {
+    margin-bottom: 10px !important;
+    border: 1px solid #ddd !important;
+    margin: 5px !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
 }
