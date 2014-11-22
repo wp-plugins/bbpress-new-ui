@@ -1299,3 +1299,6 @@ div.topic-author a {
     margin-left: -1px !important;
     margin-right: -1px !important;
 }
+.bbp-header .bbp-reply-content {
+    margin-right: 20px !important;
+}
