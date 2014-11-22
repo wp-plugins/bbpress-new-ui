@@ -64,9 +64,11 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 2.4.1 Final =
+= 2.4.2 =
+* Fix for a little bug
+* Improvements for User page
 
-= This is the latest build of this plugin. More updates will not, but in future maybe will be version 3.0. So changes: =
+= 2.4.1 =
 * Remove author style, but in left not removed left green border and the picture
 * Small fixes and improvements.
  
