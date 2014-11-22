@@ -2,8 +2,8 @@
 Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
-Tested up to: 4.0.1
-Stable Tag: 2.4.1 Final
+Tested up to: 4.1
+Stable Tag: 2.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
