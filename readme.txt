@@ -3,7 +3,7 @@ Author URI: http://vk.com/daniluk4000
 Contributors: daniluk4000, WPscript
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.1
-Stable Tag: 2.4.2.1
+Stable Tag: 2.4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,10 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 7. The style for replies author
 
 == Changelog ==
+
+= 2.4.2.2 =
+* Resolved problem with php error:"Warning: Illegal string offset 'checkbox'"
+* New, fresh design will be in early 2015!
 
 = 2.4.2.1 =
 * Fix for critical bug with broken Dark Theme
