@@ -61,7 +61,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 2.4.2.2 =
+= 2.4.3 =
 * Fix bug with "Subcribe/Favoutite" buttons in Dark Theme
 * Categories now looks better in all themes
 * New, fresh design coming in first half of 2015!
