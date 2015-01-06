@@ -1333,3 +1333,33 @@ div.topic-author a {
     border-left: 1px solid #ddd;
     height: 100%;
 }
+
+.status-category .bbp-forum-title {
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px !important;
+    text-transform: uppercase;
+}
+.status-category .bbp-forum-topic-count, .status-category .bbp-forum-reply-count {
+    margin-top: 3px !important;
+    border-color: #555 !important;
+    font-size: 12px !important;
+}
+.status-category .bbp-forum-title {
+    padding: 0 10px;
+}
+.bbp-topic-meta {
+    margin-top: 5px !important;
+}
+.status-category .bbp-forum-content {
+    min-height: 40px;
+}
+.status-category .avatar {
+    display: none;
+}
+.status-category .bbp-forum-content {
+    background: rgba(0,0,0,0.7);
+}
+#bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3 {
+    width: auto !important;
+}

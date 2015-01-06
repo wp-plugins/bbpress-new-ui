@@ -1,9 +1,9 @@
 === bbPress - New UI ===
-Author URI: http://vk.com/daniluk4000
-Contributors: daniluk4000, WPscript
+Author URI: https://profiles.wordpress.org/daniluk4000/
+Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.1
-Stable Tag: 2.4.2.2
+Stable Tag: 2.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,8 +24,6 @@ Closed and fastened themes are highlighted with a special icon (Screenshot 5)
 Many changes aimed at improving the use of the forum.
 
 New styles for categories: now they look just fine (Screenshot 6)
-
-The style for replies author (Screenshot 7)
 
 
 == Frequently Asked Questions ==
@@ -60,13 +58,16 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 4. Plugin settings
 5. Closed and fastened themes are highlighted with a special icon
 6. New styles for categories: now they look just fine
-7. The style for replies author
 
 == Changelog ==
 
 = 2.4.2.2 =
+* Fix bug with "Subcribe/Favoutite" buttons in Dark Theme
+* Categories now looks better in all themes
+* New, fresh design coming in first half of 2015!
+
+= 2.4.2.2 =
 * Resolved problem with php error:"Warning: Illegal string offset 'checkbox'"
-* New, fresh design will be in early 2015!
 
 = 2.4.2.1 =
 * Fix for critical bug with broken Dark Theme
