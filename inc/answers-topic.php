@@ -1,13 +1,4 @@
 <?php
-/*
-Plugin Name: bbPress Admin Answers
-Description: The plugin allows you to isolate the answers of the administration or moderators of a particular color, plugin adding a checkbox to the form of the answer.
-Author: Daniel 4000
-Author URI: http://vk.com/daniluk4000
-Contributors: daniluk4000
-Text Domain: bbp_new_ui
-Domain Path: languages
-*/
 require_once 'replies.php';
 class BBP_Admin_Topics {
 
@@ -19,9 +10,6 @@ class BBP_Admin_Topics {
 	 * Initializes the plugin by setting localization, filters, and administration functions.
 	 */
 	function __construct() {
-
-		// load the plugin translation files
-		add_action( 'init', array( $this, 'textdomain' ) );
 
 		// show the "Private Reply?" checkbox
 		add_action( 'bbp_theme_before_topic_form_submit_wrapper', array( $this, 'checkbox' ) );
@@ -53,18 +41,6 @@ class BBP_Admin_Topics {
 		// register css files
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 	} // end constructor
-
-
-	/**
-	 * Load the plugin's text domain
-	 *
-	 * @since 1.0
-	 *
-	 * @return void
-	 */
-	public function textdomain() {
-		load_plugin_textdomain( 'bbp_new_ui', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-	}
 
 
 	/**

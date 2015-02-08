@@ -1,0 +1,48 @@
+# Copyright (C) 2015 bbPress New UI
+# This file is distributed under the same license as the bbPress New UI package.
+msgid ""
+msgstr ""
+"Project-Id-Version: bbPress New UI 3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/bbpress-new-ui\n"
+"POT-Creation-Date: 2015-02-08 12:31:04+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-02-08 15:34+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru_RU\n"
+
+#: inc/answers-topic.php:87
+msgid "This topic of a moderator/admin"
+msgstr "Эта тема - модератора/админа"
+
+#: inc/replies.php:81
+msgid "This reply of moderator/admin"
+msgstr "Этот ответ модератора/админа"
+
+#: inc/replies.php:189
+msgid "This reply has been marked as private."
+msgstr "Этот ответ - приватный"
+
+#. Plugin Name of the plugin/theme
+msgid "bbPress New UI"
+msgstr "bbPress New UI"
+
+#. Description of the plugin/theme
+msgid ""
+"A great plugin completely changes the entire design bbpress in light or dark "
+"color"
+msgstr ""
+"Отличный плагин полностью меняет дизайн bbpress на светлый или темный цвет"
+
+#. Author of the plugin/theme
+msgid "Daniel 4000"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://profiles.wordpress.org/daniluk4000/"
+msgstr ""
