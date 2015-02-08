@@ -1236,13 +1236,6 @@ padding: 10px !important;
     border: 0px !important;
 }
 
-#bbpress-forums div.topic-author div.bbp-author-role {
-    background: url(../img/topic-author.png) repeat !important;
-    font-size: 0px !important;
-    height: 17px !important;
-    margin-left: 0px !important;
-}
-
 div.topic-author a {
     color: #eee !important;
 }

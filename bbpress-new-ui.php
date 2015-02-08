@@ -2,29 +2,45 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 2.4.3
+Version: 3.0
 Author: Daniel 4000
 Author URI: https://profiles.wordpress.org/daniluk4000/
 Contributors: daniluk4000
+Text Domain: bbp_new_ui
+Domain Path: languages
 */
 //----------------------------------------
 // Constructor
+include "inc/answers-topic.php";
+include "inc/styles-advance.php";
 class BBP_NEW_UI {
 function __construct() {
+		// load the plugin translation files
+		add_action( 'init', array( $this, 'textdomain' ) );
 add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 } 
 public function register_plugin_styles() {
 $val = get_option('bbp_new_ui_option');
 $val = $val['checkbox'];
 if ( $val == '1'){
-$css_path = plugin_dir_path( __FILE__ ) . '/css/dark.css';
-wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/css/dark.css', filemtime( $css_path ) );
+$css_path = plugin_dir_path( __FILE__ ) . '/inc/css/dark.css';
+wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/dark.css', filemtime( $css_path ) );
 } 
 else {
-$css_path = plugin_dir_path( __FILE__ ) . '/css/light.css';
-wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/css/light.css', filemtime( $css_path ) );
+$css_path = plugin_dir_path( __FILE__ ) . '/inc/css/light.css';
+wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css', filemtime( $css_path ) );
 } 
 }
+	/**
+	 * Load the plugin's text domain
+	 *
+	 * @since 1.0
+	 *
+	 * @return void
+	 */
+	public function textdomain() {
+		load_plugin_textdomain( 'bbp_new_ui', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	}
 } // end class
 
 //----------------------------------------
@@ -71,7 +87,6 @@ else {
 echo "Now active Light Theme";
 }
 }
-
 // instantiate our plugin's class
 $GLOBALS['bbp_new_ui'] = new BBP_NEW_UI();
 ?>
