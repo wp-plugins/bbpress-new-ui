@@ -11,6 +11,16 @@ A great plugin completely changes the entire design bbpress in light or dark col
 
 == Description ==
 
+Contacting the developer to the community:
+
+Guys, we already have 3000! My plugin was downloaded 3,000 times! This is a very large figure, and I'm responsible for all 3000 users who use my plugin.
+
+I hope that soon I will be able to introduce you to version 3.0. Thank you for using my plugin.
+
+And what you waiting from new version? Write here: https://wordpress.org/support/topic/we-are-3000
+
+Description
+
 A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin supported the plugin "bbPress admin replies".
 
 Features:
