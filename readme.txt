@@ -1,5 +1,5 @@
 === bbPress - New UI ===
-Author URI: https://profiles.wordpress.org/daniluk4000/
+Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.2.1
