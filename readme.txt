@@ -2,8 +2,8 @@
 Author URI: https://profiles.wordpress.org/daniluk4000/
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
-Tested up to: 4.1
-Stable Tag: 2.4.3
+Tested up to: 4.2.1
+Stable Tag: 3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,19 +11,19 @@ A great plugin completely changes the entire design bbpress in light or dark col
 
 == Description ==
 
-A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin supported the plugin "bbPress admin replies".
+A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin integrated with plugin "bbPress admin replies".
 
 Features:
 
 Redesigned a reply form (Screenshot 1)
   
-Great choice between dark/bright colors (Scheenshots two, three and four)
+Great choice between dark/light colors (Scheenshots two, three and four)
   
-Closed and fastened themes are highlighted with a special icon (Screenshot 5)
-  
-Many changes aimed at improving the use of the forum.
-
+Closed and sticky themes are highlighted with a special icon (Screenshot 5)
+ 
 New styles for categories: now they look just fine (Screenshot 6)
+
+Many changes aimed at improving the use of the forum.
 
 
 == Frequently Asked Questions ==
@@ -34,11 +34,11 @@ Just activate the plugin. The styles are automatically activated.
 
 = How can I change the style? =
 
-Find the tab "New bbPress UI" in the settings in the admin panel and select "switch color" or edit dark.css (this theme by default)
+Find the tab "New bbPress UI" in the settings in the admin panel and select "switch color" or edit files in inc/css
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 3.0 =
 
 1. Install the plugin
 2. Activate the plugin in Plugins page
@@ -60,6 +60,17 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 6. New styles for categories: now they look just fine
 
 == Changelog ==
+
+= 3.0 - redesign =
+* Fully updated main page of the forum: added padding between each forums and much more
+* Added message "topic author" and "administrator" at the appropriate replies
+* Integrated plugin: bbPress Admin answers
+* Added upper border, so, for example, conventional replies border color grey, the authors - yellow, the official moder answers - blue
+* Fully updated header of replies
+* Reply number with a hyperlink is back!
+* Now forum search working normal
+* Many other fixes and improvements
+
 
 = 2.4.3 =
 * Fix bug with "Subcribe/Favoutite" buttons in Dark Theme

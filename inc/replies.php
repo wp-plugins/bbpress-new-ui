@@ -1,4 +1,8 @@
 <?php
+/*
+Text Domain: bbp_admin_replies
+Domain Path: languages
+*/
 class BBP_Admin_Replies {
 
 	/*--------------------------------------------*
@@ -33,8 +37,6 @@ class BBP_Admin_Replies {
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 
 	} // end constructor
-
-
 
 	/**
 	 * Outputs the "Set as private reply" checkbox

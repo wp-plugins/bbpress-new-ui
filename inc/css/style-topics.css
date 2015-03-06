@@ -10,8 +10,32 @@
     color: #ddd !important;
 }
 .user-id-1 {
-    border-left: 2px solid #1b61bf !important;
-    border-radius: 2px;
+    border-top: 2px solid rgb(27, 97, 191) !important;
+    border-top-left-radius: 3px !important;
+    border-left: 0px !important;
+}
+#bbpress-forums div.user-id-1.reply::before {
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.3);
+    margin-top: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-right-width: 0px;
+}
+#bbpress-forums .user-id-1.reply::before {
+    content: "Administrator";
+    display: block;
+    float: right;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    border-width: 0px 1px 1px;
+    border-style: none solid solid;
+    border-color: -moz-use-text-color rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.25);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    cursor: default;
 }
 .bbp-admin-topic .topic-author a {
     color: #fff !important;

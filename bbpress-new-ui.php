@@ -6,11 +6,12 @@ Version: 3.0
 Author: Daniel 4000
 Author URI: https://profiles.wordpress.org/daniluk4000/
 Contributors: daniluk4000
-Text Domain: my-plugin
+Text Domain: bbp-new-ui
 Domain Path: /languages
 */
 //----------------------------------------
 // Constructor
+include "inc/designtotal.php";
 include "inc/answers-topic.php";
 class BBP_NEW_UI {
 function __construct() {
@@ -32,10 +33,10 @@ wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css
 
 // Load
 //----------------------------------------
-function my_plugin_load_plugin_textdomain() {
-    load_plugin_textdomain( 'my-plugin', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+function bbp_new_ui_load_plugin_textdomain() {
+    load_plugin_textdomain( 'bbp-new-ui', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
-add_action( 'plugins_loaded', 'my_plugin_load_plugin_textdomain' );
+add_action( 'plugins_loaded', 'bbp_new_ui_load_plugin_textdomain' );
 
 //----------------------------------------
 // Create plugin settings page
