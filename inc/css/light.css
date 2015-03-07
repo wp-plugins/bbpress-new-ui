@@ -1325,3 +1325,24 @@ body.reply-edit .reply a {
 #bbpress-forums li.bbp-footer::before {
     margin-left: 0px;
 }
+#bbpress-forums .topic-author {
+    border-top: 2px solid #E4AC00 !important;
+    border-left: 0px none !important;
+}
+#bbpress-forums div.odd, #bbpress-forums ul.odd, #bbpress-forums div.even, #bbpress-forums ul.even {
+    padding-top: 65px !important;
+    margin-top: 5px !important;
+}
+.bbp-reply-header .bbp-meta, .bbp-topic-header .bbp-meta {
+    height: 60px !important;
+}
+#bbpress-forums span.bbp-admin-links {
+    width: 100% !important;
+    max-width: 100%;
+}
+body.reply-edit .reply a {
+    color: #000 !important;
+}
+.widget .topic-author {
+    border: 0px !important;
+}
