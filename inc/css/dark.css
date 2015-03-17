@@ -1895,3 +1895,58 @@ span.bbp-admin-links {
 .widget .topic-author {
     border: 0px !important;
 }
+
+
+#bbpress-forums div.bbp-admin-reply .bbp-reply-content, #bbpress-forums div.bbp-admin-topic.bbp-reply-position-1 .bbp-reply-content, #bbpress-forums div.bbp-admin-topic.topic-author .bbp-reply-content  {
+    background: none repeat scroll 0% 0% rgba(35, 50, 73, 0.78) !important;
+}
+#bbpress-forums div.bbp-admin-reply, #bbpress-forums div.bbp-admin-topic.bbp-reply-position-1, #bbpress-forums div.bbp-admin-topic.topic-author {
+    background-color: rgba(4, 18, 41, 0.9) !important;
+    border-color: #3498DB !important;
+    border-width: 4px !important;
+    color: #DDD !important;
+}
+div.bbp-template-notice, div.indicator-hint {
+    margin: -1px !important;
+}
+#bbpress-forums .page-numbers {
+    transition: border 0.5s;
+}
+#bbpress-forums .page-numbers:hover {
+    transition: border 0.5s;
+}
+#bbpress-forums .page-numbers.dots {
+    transition: 0px !important;
+    border: 0px !important;
+    background: transparent !important;
+}
+#bbpress-forums div.bbp-forum-author .bbp-author-role, #bbpress-forums div.bbp-topic-author .bbp-author-role, #bbpress-forums div.bbp-reply-author .bbp-author-role {
+    display: inline-block !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    background-color: rgba(255,255,255,0.1);
+}
+.bbp-pagination-links {
+    margin-top: 5px;
+}
+#bbp_reply_submit, #bbp_topic_submit {
+    transition-property: text-transform, padding-top, padding-bottom, padding-left, padding-right, color, border-color, padding-left, padding-right, margin-left, margin-right !important;
+    transition-duration: 0.4s !important;
+    transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
+    transition-timing-function: cubic-bezier(0.69, 0.55, 0.195, 2.65) !important;
+}
+div.bbp-admin-topic #bbpress-forums li.bbp-header, div.bbp-admin-topic #bbpress-forums li.bbp-footer {
+    background: none repeat scroll 0% 0% #2A3647 !important;
+    color: #DDD !important;
+}
+#bbpress-forums .page-numbers.current {
+    background: #000 !important;
+    color: #fff !important;
+}
+#bbpress-forums .page-numbers {
+    background-color: #555 !important;
+    color: #ddd !important;
+}
+.reply, .topic {
+    border-left: 0px solid #aaa !important;
+}
