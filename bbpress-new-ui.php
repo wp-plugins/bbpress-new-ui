@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.0.2
+Version: 3.0.3beta
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -72,13 +72,13 @@ $val = get_option('bbp_new_ui_option');
 $val = $val['checkbox'];
 ?>
 <label>
-<input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val['checkbox'] ) ?>  /> change style</label> <br>
+<input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val['checkbox'] ) ?>  /> <?php _e( 'change style ' ); ?></label> <br>
 <?php
 if ( $val == '1') {
-echo "Now active Dark Theme";
+_e( 'Now active Dark theme' );
 } 
 else {
-echo "Now active Light Theme";
+_e( 'Now active Light theme' );
 }
 }
 // instantiate our plugin's class

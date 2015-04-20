@@ -1950,3 +1950,78 @@ div.bbp-admin-topic #bbpress-forums li.bbp-header, div.bbp-admin-topic #bbpress-
 .reply, .topic {
     border-left: 0px solid #aaa !important;
 }
+
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    background: #0F0F0F !important;
+    border-top: 2px solid #C0C0C0 !important;
+    border-top-left-radius: 3px !important;
+}
+.bbp-body .type-forum .bbp-forum-title {
+    font-size: 23px;
+    float: left;
+    width: 250%;
+    color: #fff !important;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+#bbpress-forums .status-category .bbp-forum-title {
+    margin: 0px;
+    padding: 0px;
+}
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    padding-bottom: 0px !important;
+}
+#bbpress-forums p.bbp-topic-meta {
+    margin-top: -10px !important;
+    margin-bottom: 7px !important;
+}
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+    margin-bottom: -20px !important;
+}
+#bbpress-forums .status-category p.bbp-topic-meta {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+#bbpress-forums .status-category .bbp-forum-content {
+    margin-bottom: 0px !important;
+}
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+    float: none;
+    border: 3px double #DDD;
+    margin-bottom: 0px;
+    display: none;
+}
+.bbp-forum-content {
+    min-height: 60px !important;
+}
+#bbpress-forums .bbp-forum-freshness a {
+    padding-top: 17px;
+}
+#bbpress-forums p.bbp-topic-meta {
+    margin-top: 5px !important;
+    margin-bottom: 7px !important;
+}
+#bbpress-forums li.bbp-footer::before {
+    content: "Forum Theme by dk4000.com - Daniluk's";
+    cursor: default;
+    float: left;
+    width: 100%;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.05);
+    padding: 5px 12px 5px 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    margin-left: -9px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin: 00px;
+}
+#bbpress-forums li.bbp-body ul.bbp-admin-topic {
+    border-top-color: #1B61BF !important;
+}

@@ -1395,3 +1395,66 @@ div.bbp-template-notice, div.indicator-hint {
 #bbp_reply_submit:hover, #bbp_topic_submit:hover {
     color: #fff !important;
 }
+#bbpress-forums .bbp-topics li.bbp-body ul.topic {
+    border-bottom: 1px solid rgb(170, 170, 170) !important;
+    box-shadow: 1px 1px 0.5px 0px rgb(221, 221, 221);
+    border-top: 2px solid #aaa !important;
+    border-left: 0px !important;
+}
+#bbpress-forums .bbp-topics li.bbp-body ul.bbp-admin-topic {
+    border-top-color: #3498DB !important;
+}
+
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    background: #F0F0F0 !important;
+    border-top: 2px solid #C0C0C0 !important;
+    border-top-left-radius: 3px !important;
+}
+.bbp-body .type-forum .bbp-forum-title {
+    font-size: 23px;
+    float: left;
+    width: 250%;
+    color: #555;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+#bbpress-forums .status-category .bbp-forum-title {
+    margin: 0px;
+    padding: 0px;
+}
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    padding-bottom: 0px !important;
+}
+#bbpress-forums p.bbp-topic-meta {
+    margin-top: -10px !important;
+    margin-bottom: 7px !important;
+}
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+    margin-bottom: -20px !important;
+}
+#bbpress-forums .status-category p.bbp-topic-meta {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+#bbpress-forums .status-category .bbp-forum-content {
+    margin-bottom: 0px !important;
+}
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+    float: none;
+    border: 3px double #DDD;
+    margin-bottom: 0px;
+    display: none;
+}
+#bbpress-forums p.bbp-topic-meta {
+    margin-top: 5px !important;
+    margin-bottom: 7px !important;
+}
+html body div.bbp-admin-topic #bbpress-forums .bbp-header {
+    background-color: rgb(71, 85, 108) !important;
+    color: #aaa !important;
+}
+html body div.bbp-admin-topic #bbpress-forums .bbp-header a {
+    color: #ccc;
+}
