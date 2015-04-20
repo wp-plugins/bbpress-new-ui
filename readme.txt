@@ -3,7 +3,7 @@ Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
 Tested up to: 4.2.1
-Stable Tag: 3.0.2
+Stable Tag: 3.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,7 +61,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 3.0.2 =
+= 3.0.2-3.0.3 =
 * Design improvements
 
 = 3.0.1 =
