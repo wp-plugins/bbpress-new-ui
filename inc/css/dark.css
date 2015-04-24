@@ -2025,3 +2025,40 @@ div.bbp-admin-topic #bbpress-forums li.bbp-header, div.bbp-admin-topic #bbpress-
 #bbpress-forums li.bbp-body ul.bbp-admin-topic {
     border-top-color: #1B61BF !important;
 }
+
+.bbp-forum-title {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+    margin-bottom: 0px !important;
+}
+#bbpress-forums .bbp-topics .page-numbers {
+    background: none repeat scroll 0% 0% #CCC !important;
+    color: #000 !important;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+.bbp-body .type-forum .bbp-forum-title {
+    border-color: #202020;
+}
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+    margin-bottom: 10px !important;
+}
+#bbpress-forums .forum .bbp-forum-topic-count, #bbpress-forums .forum .bbp-forum-reply-count {
+    margin-top: 5px !important;
+}
+#bbpress-forums .bbp-forums-list {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px !important;
+    width: auto;
+    margin-left: 0px !important;
+    padding-right: 10px;
+}
+#bbpress-forums .bbp-forums-list li {
+     display: block !important;
+}
+#bbpress-forums .bbp-forums-list {
+    width: 220% !important;
+}
