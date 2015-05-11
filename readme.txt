@@ -14,10 +14,14 @@ A great plugin completely changes the entire design bbpress in light or dark col
 A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin integrated with plugin "bbPress admin replies".
 
 Languages:
-  English
-  Russian
-  German
-  Brazilian Portuguese
+
+English
+  
+Russian
+  
+German
+
+Brazilian Portuguese
 
 Features:
 
