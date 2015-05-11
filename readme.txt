@@ -19,9 +19,9 @@ English
   
 Russian
   
-German
-
 Brazilian Portuguese
+
+German
 
 Features:
 
