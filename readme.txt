@@ -1,9 +1,9 @@
 === bbPress - New UI ===
 Author URI: http://dk4000.com
 Contributors: daniluk4000
-Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, WPscript
-Tested up to: 4.2.1
-Stable Tag: 3.0.4
+Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign
+Tested up to: 4.3
+Stable Tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,12 @@ A great plugin completely changes the entire design bbpress in light or dark col
 
 A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin integrated with plugin "bbPress admin replies".
 
+Languages:
+  English
+  Russian
+  German
+  Brazilian Portuguese
+
 Features:
 
 Redesigned a reply form (Screenshot 1)
@@ -21,7 +27,7 @@ Great choice between dark/light colors (Scheenshots two, three and four)
   
 Closed and sticky themes are highlighted with a special icon (Screenshot 5)
  
-New styles for categories: now they look just fine (Screenshot 6)
+New styles for categories: now it looks just fine (Screenshot 6)
 
 Many changes aimed at improving the use of the forum.
 
@@ -38,7 +44,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Upgrade Notice ==
 
-= 3.0 =
+= 3.1 =
 
 1. Install the plugin
 2. Activate the plugin in Plugins page
@@ -57,9 +63,16 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 3. Light color
 4. Plugin settings
 5. Closed and fastened themes are highlighted with a special icon
-6. New styles for categories: now they look just fine
+6. New styles for categories: now it looks just fine
 
 == Changelog ==
+
+= 3.1 =
+* Fully remaked Forums:
+- For latest topics now displaying topic title
+- Remaked functional for categories: test it! Write your review in Support forums!
+* Added German, Russian and Brazilian Portuguese translations: thanks getbblog.com team!
+* Updated screenshots and added compatibility with WP 4.3
 
 = 3.0.2-3.0.3-3.0.4 =
 * Design improvements

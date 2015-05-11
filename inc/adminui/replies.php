@@ -14,21 +14,17 @@ class BBP_Admin_Replies {
 	 */
 	function __construct() {
 
-		// show the "Private Reply?" checkbox
+		// show the checkbox
 		add_action( 'bbp_theme_before_reply_form_submit_wrapper', array( $this, 'checkbox' ) );
 
-		// save the private reply state
+		// save reply state
 		add_action( 'bbp_new_reply',  array( $this, 'update_reply' ), 0, 6 );
 		add_action( 'bbp_edit_reply',  array( $this, 'update_reply' ), 0, 6 );
-
 		// hide reply content
 		add_filter( 'bbp_get_reply_excerpt', array( $this, 'hide_reply' ), 999, 2 );
 		add_filter( 'bbp_get_reply_content', array( $this, 'hide_reply' ), 999, 2 );
 		add_filter( 'the_content', array( $this, 'hide_reply' ), 999 );
 		add_filter( 'the_excerpt', array( $this, 'hide_reply' ), 999 );
-
-		// prevent private replies from being sent in email subscriptions
-		add_filter( 'bbp_subscription_mail_message', array( $this, 'prevent_subscription_email' ), 10, 3 );
 
 		// add a class name indicating the read status
 		add_filter( 'post_class', array( $this, 'reply_post_class' ) );
@@ -39,7 +35,7 @@ class BBP_Admin_Replies {
 	} // end constructor
 
 	/**
-	 * Outputs the "Set as private reply" checkbox
+	 * Outputs the checkbox
 	 *
 	 * @since 1.0
 	 *
@@ -56,7 +52,7 @@ class BBP_Admin_Replies {
 
 			<?php if ( current_user_can('moderate') ) : ?>
 
-				<label for="bbp_admin_reply"><?php _e( 'This reply of moderator/admin', 'bbp_admin_replies' ); ?></label>
+				<label for="bbp_admin_reply"><?php $locale = get_locale(); if($locale == "ru_RU") : echo'Это ответ модератора/админа'; elseif($locale == "de_DE") : echo'Das ist eine '; _e( 'Reply', bbpress); echo' von einem Moderator/Admin'; elseif($locale == "pt_BR"): echo'Esta '; _e('Reply', bbpress); echo' é de um moderador/admin'; else: echo'This '; _e('Reply', bbpress); echo' of a '; _e('Moderator', bbpress); echo'/'; _e( "Keymaster", bbpress); endif; ?></label>
 				<label for="bbp_admin_reply"><?php _e( '', 'bbp_admin_replies' ); ?></label>
 
 			<?php endif; ?>
@@ -68,7 +64,7 @@ class BBP_Admin_Replies {
 
 
 	/**
-	 * Stores the private state on reply creation and edit
+	 * Stores the state on reply creation and edit
 	 *
 	 * @since 1.0
 	 *

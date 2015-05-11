@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.0.4
+Version: 3.1
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -11,7 +11,8 @@ Domain Path: /languages
 */
 //----------------------------------------
 // Constructor
-include "inc/answers-topic.php";
+include "inc/adminui/answers-topic.php";
+include "inc/forumui/functions.php";
 class BBP_NEW_UI {
 function __construct() {
 add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
@@ -70,15 +71,34 @@ add_action('admin_init', 'plugin_settings');
 function fill_bbp_new_ui_field(){
 $val = get_option('bbp_new_ui_option');
 $val = $val['checkbox'];
+$locale = get_locale();
 ?>
 <label>
-<input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val['checkbox'] ) ?>  /> <?php _e( 'change style in Dark Color' ); ?></label> <br>
+<input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val['checkbox'] ) ?>  /> <?php if( $locale == "ru_RU" ) :
+	  echo 'сменить стиль на темный'; elseif( $locale == "de_DE" ) : echo 'ändere Style zu Dark Theme'; elseif( $locale == "pt_BR" ): echo 'Obscurecer Tema'; else: echo 'change style to Dark Color';
+endif; ?></label> <br>
 <?php
 if ( $val == '1') {
+if( $locale == "ru_RU" ) {
+_e( 'Сейчас активна темная тема' ); }
+elseif( $locale == "de_DE" ) {
+_e( 'Jetzt aktives Dark Theme' ); }
+elseif( $locale == "pt_BR" ) {
+_e( 'Tema Escuro Ativado' ); }
+else {
 _e( 'Now active Dark theme' );
+}
 } 
 else {
+if( $locale == "ru_RU" ) {
+_e( 'Сейчас активна светлая тема' ); }
+elseif( $locale == "de_DE" ) {
+_e( 'Jetzt aktives Light Theme' ); }
+elseif( $locale == "pt_BR" ) {
+_e( 'Tema Claro Ativado' ); }
+else {
 _e( 'Now active Light theme' );
+}
 }
 }
 // instantiate our plugin's class
