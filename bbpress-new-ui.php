@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.1
+Version: 3.1.1
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -19,7 +19,7 @@ add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 } 
 public function register_plugin_styles() {
 $val = get_option('bbp_new_ui_option');
-$val = $val['checkbox'];
+$val = $val['1'];
 if ( $val == '1'){
 $css_path = plugin_dir_path( __FILE__ ) . '/inc/css/dark.css';
 wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/dark.css', filemtime( $css_path ) );
@@ -70,11 +70,13 @@ add_action('admin_init', 'plugin_settings');
 
 function fill_bbp_new_ui_field(){
 $val = get_option('bbp_new_ui_option');
-$val = $val['checkbox'];
 $locale = get_locale();
+$val = $val['1'];
+$posts = get_posts();
 ?>
 <label>
-<input type="checkbox" name="bbp_new_ui_option[checkbox]" value="1" <?php checked( 1, $val['checkbox'] ) ?>  /> <?php if( $locale == "ru_RU" ) :
+
+<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php if( $locale == "ru_RU" ) :
 	  echo 'сменить стиль на темный'; elseif( $locale == "de_DE" ) : echo 'ändere Style zu Dark Theme'; elseif( $locale == "pt_BR" ): echo 'Obscurecer Tema'; else: echo 'change style to Dark Color';
 endif; ?></label> <br>
 <?php
