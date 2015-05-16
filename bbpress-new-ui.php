@@ -41,7 +41,7 @@ function new_ui_admin_notice() {
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'new_ui_ignore_notice') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('Want to test the new versions of BBP New UI plugin? Want to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?new_ui_nag_ignore=0');
+        printf(__('Want to test the new versions of BBP New UI plugin or to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?new_ui_nag_ignore=0');
         echo "</p></div>";
 	}
 }
@@ -102,31 +102,13 @@ $posts = get_posts();
 ?>
 <label>
 
-<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php if( $locale == "ru_RU" ) :
-	  echo 'сменить стиль на темный'; elseif( $locale == "de_DE" ) : echo 'ändere Style zu Dark Theme'; elseif( $locale == "pt_BR" ): echo 'Obscurecer Tema'; else: echo 'change style to Dark Color';
-endif; ?></label> <br>
+<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php _e( 'Change style to Dark color', 'bbp-new-ui'); ?></label> <br>
 <?php
 if ( $val == '1') {
-if( $locale == "ru_RU" ) {
-_e( 'Сейчас активна темная тема' ); }
-elseif( $locale == "de_DE" ) {
-_e( 'Jetzt aktives Dark Theme' ); }
-elseif( $locale == "pt_BR" ) {
-_e( 'Tema Escuro Ativado' ); }
-else {
-_e( 'Now active Dark theme' );
-}
+_e( 'Now active Dark Theme' );
 } 
 else {
-if( $locale == "ru_RU" ) {
-_e( 'Сейчас активна светлая тема' ); }
-elseif( $locale == "de_DE" ) {
-_e( 'Jetzt aktives Light Theme' ); }
-elseif( $locale == "pt_BR" ) {
-_e( 'Tema Claro Ativado' ); }
-else {
-_e( 'Now active Light theme' );
-}
+_e( 'Now active Light Theme' );
 }
 }
 // instantiate our plugin's class
