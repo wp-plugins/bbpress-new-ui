@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.1.1
+Version: 3.1.1.1
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -31,8 +31,8 @@ wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css
 }
 } // end class
 
-/* Display a notice that can be dismissed */
-
+// Notice
+//----------------------------------------
 add_action('admin_notices', 'admin_notice');
 
 function admin_notice() {
@@ -41,7 +41,7 @@ function admin_notice() {
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'ignore_notice') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('Want to test the new versions of BBP New UI plugin? Want to add your translation or have an idea/suggestion? | <a href="%1$s">No, Im not, dont show me this</a>'),'?nag_ignore=0');
+        printf(_e('Want to test the new versions of BBP New UI plugin or to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">No, Im not, dont show me it again</a>', 'bbp-new-ui' ),'?nag_ignore=0');
         echo "</p></div>";
 	}
 }
@@ -56,7 +56,6 @@ function nag_ignore() {
              add_user_meta($user_id, 'ignore_notice', 'true', true);
 	}
 }
-
 
 // Load
 //----------------------------------------
