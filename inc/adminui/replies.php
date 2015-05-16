@@ -1,4 +1,8 @@
 <?php
+/*
+Text Domain: bbp_admin_replies
+Domain Path: languages
+*/
 class BBP_Admin_Replies {
 
 	/*--------------------------------------------*
