@@ -14,11 +14,10 @@ A great plugin completely changes the entire design bbpress in light or dark col
 A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin integrated with plugin "bbPress admin replies".
 
 Languages: 
-English;
-German;
-Russian;
-Brazilian Portuguese
-
+English; 
+German; 
+Russian; 
+Brazilian Portuguese;
 
 If you want to add your language - just write me in admin@dk4000.com!
 
@@ -70,6 +69,9 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
+= 3.1.1.1 =
+* Added notice
+
 = 3.1.1 =
 * Fixed some errors, including: Illegal string offset 'checkbox',filemtime(): stat failed and e.t.c
 * Some design fixes
@@ -98,101 +100,3 @@ Fully remaked Forums:
 * Reply number with a hyperlink is back!
 * Now forum search working normal
 * Many other fixes and improvements
-
-
-= 2.4.3 =
-* Fix bug with "Subcribe/Favoutite" buttons in Dark Theme
-* Categories now looks better in all themes
-* New, fresh design coming in first half of 2015!
-
-= 2.4.2.2 =
-* Resolved problem with php error:"Warning: Illegal string offset 'checkbox'"
-
-= 2.4.2.1 =
-* Fix for critical bug with broken Dark Theme
-
-= 2.4.2 =
-* Fix for a little bug
-* Improvements for User page
-
-= 2.4.1 =
-* Remove author style, but in left not removed left green border and the picture
-* Small fixes and improvements.
- 
-
-= 2.4 =
-* New styles for categories: now they look just fine
-* The style for replies author
-* New icons for locked/sticky topics
-* New improvements for light theme
-* By default now used light theme
-
-= 2.3.1 =
-* Support for bbPress Admin Answers 2.0
-* Fixes for minor bugs
-
-= 2.3 =
-
-* Added new icons for the form of creating topics/reply
-* Change color of signature text
-* All sorts of minor fixes
-* New Screenshots (1 and 3)
-
-= 2.2.0 - First absolutely stable release 2.x =
-* Fix for the fatal error when you activate the plugin - thank you, testers! I hope now you get the full pleasure from the plugin :D 
-* Fixed many bugs for dark and light color
-
-= 2.1 - big fixes bugs release =
-
-* Improved style for pagination links in dark.css
-* Fixes for many many many many bugs...
-
-= 2.0.1 =
-
-* Design fixes for Light color
-* Icon in page of closed topic
-
-= 2.0 - great community release = 
-
-* I followed your advice and added a switch between the dark and light color, and light will be much further developed. Thank you for your feedback and support!
-* Avatars returned to its original size.
-* Fixed some bugs 
-  Hurray, hurray, hurray!
-
-= 1.5.1 = 
-* Bug fix
-
-= 1.5 =
-* New Screenshots
-* Absolutely new style for field for creating topics/replies
-
-= 1.4 =
-
-* Added border for the role of the author
-
-= 1.3.1 =
-
-* Added a stroke around all the counters in the list of review topics, not just forums
-* Some changes with a small avatar
-* Created the img folder
-* Added padding between the replies
-* Many small fixes and improvements on the occasion of the release of version 4.0
-* Revised and reissued version 1.3
-
-= 1.2 =
-
-* Added a beautiful dark color for the list of topics and forums
-* Completely redesigned notifications
-* Lower unit under the answers are also painted in black
-* Avatars made rounded
-* Fixed several bugs
-
-= 1.1 =
-
-* Added features
-* Added Screenshots 
-* Fixed a bug and added compatibility with bbPress admin replies!
-
-= 1.0 =
-
-* The plugin created!
