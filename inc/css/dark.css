@@ -2315,7 +2315,3 @@ li.bbp-forum-freshness, li.bbp-topic-freshness {
 #bbpress-forums div.bbp-template-notice {
     padding: 0 5px !important;
 }
-.bbp-forum-inter-content {
-    min-height: 26px;
-    margin-top: 1px !important;
-}
