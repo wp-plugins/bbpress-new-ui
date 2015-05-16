@@ -31,32 +31,31 @@ wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css
 }
 } // end class
 
-/* Display a notice that can be dismissed */
+// Notice
+//----------------------------------------
+add_action('admin_notices', 'new_ui_admin_notice');
 
-add_action('admin_notices', 'admin_notice');
-
-function admin_notice() {
+function new_ui_admin_notice() {
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'ignore_notice') ) {
+	if ( ! get_user_meta($user_id, 'new_ui_ignore_notice') ) {
         echo '<div class="updated"><p>'; 
-        printf(_e('Want to test the new versions of BBP New UI plugin? Want to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">No, Im not, dont show me it again</a>', 'bbp-new-ui' ),'?nag_ignore=0');
+        printf(__('Want to test the new versions of BBP New UI plugin? Want to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?new_ui_nag_ignore=0');
         echo "</p></div>";
 	}
 }
 
-add_action('admin_init', 'nag_ignore');
+add_action('admin_init', 'new_ui_nag_ignore');
 
-function nag_ignore() {
+function new_ui_nag_ignore() {
 	global $current_user;
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
-        if ( isset($_GET['nag_ignore']) && '0' == $_GET['nag_ignore'] ) {
-             add_user_meta($user_id, 'ignore_notice', 'true', true);
+        if ( isset($_GET['new_ui_nag_ignore']) && '0' == $_GET['new_ui_nag_ignore'] ) {
+             add_user_meta($user_id, 'new_ui_ignore_notice', 'true', true);
 	}
 }
-
 
 // Load
 //----------------------------------------
@@ -103,13 +102,31 @@ $posts = get_posts();
 ?>
 <label>
 
-<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php _e( 'change style to Dark Color', 'bbp-new-ui' ); ?></label> <br>
+<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php if( $locale == "ru_RU" ) :
+	  echo 'сменить стиль на темный'; elseif( $locale == "de_DE" ) : echo 'ändere Style zu Dark Theme'; elseif( $locale == "pt_BR" ): echo 'Obscurecer Tema'; else: echo 'change style to Dark Color';
+endif; ?></label> <br>
 <?php
 if ( $val == '1') {
-_e( 'Now active Dark theme', 'bbp-new-ui' );
-}
+if( $locale == "ru_RU" ) {
+_e( 'Сейчас активна темная тема' ); }
+elseif( $locale == "de_DE" ) {
+_e( 'Jetzt aktives Dark Theme' ); }
+elseif( $locale == "pt_BR" ) {
+_e( 'Tema Escuro Ativado' ); }
 else {
-_e( 'Now active Light theme', 'bbp-new-ui' );
+_e( 'Now active Dark theme' );
+}
+} 
+else {
+if( $locale == "ru_RU" ) {
+_e( 'Сейчас активна светлая тема' ); }
+elseif( $locale == "de_DE" ) {
+_e( 'Jetzt aktives Light Theme' ); }
+elseif( $locale == "pt_BR" ) {
+_e( 'Tema Claro Ativado' ); }
+else {
+_e( 'Now active Light theme' );
+}
 }
 }
 // instantiate our plugin's class
