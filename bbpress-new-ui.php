@@ -31,8 +31,8 @@ wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css
 }
 } // end class
 
-// Notice
-//----------------------------------------
+/* Display a notice that can be dismissed */
+
 add_action('admin_notices', 'admin_notice');
 
 function admin_notice() {
@@ -41,7 +41,7 @@ function admin_notice() {
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'ignore_notice') ) {
         echo '<div class="updated"><p>'; 
-        printf(_e('Want to test the new versions of BBP New UI plugin or to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">No, Im not, dont show me it again</a>', 'bbp-new-ui' ),'?nag_ignore=0');
+        printf(_e('Want to test the new versions of BBP New UI plugin? Want to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">No, Im not, dont show me it again</a>', 'bbp-new-ui' ),'?nag_ignore=0');
         echo "</p></div>";
 	}
 }
@@ -56,6 +56,7 @@ function nag_ignore() {
              add_user_meta($user_id, 'ignore_notice', 'true', true);
 	}
 }
+
 
 // Load
 //----------------------------------------
@@ -102,31 +103,13 @@ $posts = get_posts();
 ?>
 <label>
 
-<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php if( $locale == "ru_RU" ) :
-	  echo 'сменить стиль на темный'; elseif( $locale == "de_DE" ) : echo 'ändere Style zu Dark Theme'; elseif( $locale == "pt_BR" ): echo 'Obscurecer Tema'; else: echo 'change style to Dark Color';
-endif; ?></label> <br>
+<input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php _e( 'change style to Dark Color', 'bbp-new-ui' ); ?></label> <br>
 <?php
 if ( $val == '1') {
-if( $locale == "ru_RU" ) {
-_e( 'Сейчас активна темная тема' ); }
-elseif( $locale == "de_DE" ) {
-_e( 'Jetzt aktives Dark Theme' ); }
-elseif( $locale == "pt_BR" ) {
-_e( 'Tema Escuro Ativado' ); }
-else {
-_e( 'Now active Dark theme' );
+_e( 'Now active Dark theme', 'bbp-new-ui' );
 }
-} 
 else {
-if( $locale == "ru_RU" ) {
-_e( 'Сейчас активна светлая тема' ); }
-elseif( $locale == "de_DE" ) {
-_e( 'Jetzt aktives Light Theme' ); }
-elseif( $locale == "pt_BR" ) {
-_e( 'Tema Claro Ativado' ); }
-else {
-_e( 'Now active Light theme' );
-}
+_e( 'Now active Light theme', 'bbp-new-ui' );
 }
 }
 // instantiate our plugin's class

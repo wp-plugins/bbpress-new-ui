@@ -48,11 +48,7 @@ elem.parentNode.removeChild(elem);
 			<li class="bbp-forum-info"><?php _e( 'Forum', 'bbpress' ); ?></li>
 			<li class="bbp-forum-topic-count"><?php _e( 'Topics', 'bbpress' ); ?></li>
 			<li class="bbp-forum-reply-count"><?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
-			<li class="bbp-forum-freshness"><?php $locale = get_locale(); 
-			if( $locale == "ru_RU" ) { _e( 'Последняя активность', 'bbpress-new-ui' ); } 
-			elseif ( $locale == "de_DE" ) { _e( 'Letzte Aktivitat', 'bbpress-new-ui' ); }
-			elseif ( $locale == "pt_BR" ) { _e( 'Última Atividade', 'bbpress-new-ui' ); }
-			else { _e( 'Latest activity', 'bbpress-new-ui' ); } ?></li>
+			<li class="bbp-forum-freshness"><?php _e( 'Latest activity', 'bbp-new-ui' ); ?></li>
 		</ul>
 
 	</li><!-- .bbp-header -->
