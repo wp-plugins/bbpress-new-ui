@@ -3,7 +3,7 @@ Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign
 Tested up to: 4.3
-Stable Tag: 3.1.1.1
+Stable Tag: 3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,10 +14,12 @@ A great plugin completely changes the entire design bbpress in light or dark col
 A great plugin that changes the interface of the forum: now he looks beautiful, fresh and in dark/light colors with plugin settings. The plugin integrated with plugin "bbPress admin replies".
 
 Languages: 
-English; 
-German; 
-Russian; 
-Brazilian Portuguese;
+  English;
+  German;
+  Russian;
+  Brazilian Portuguese;
+  Polish;
+  
 
 If you want to add your language - just write me in admin@dk4000.com!
 
@@ -68,6 +70,12 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 6. New styles for categories: now it looks just fine
 
 == Changelog ==
+
+= 3.2 =
+* Updated Forum and Topic lists UI
+* Added Polish translation
+* Added Poedit support for all strings (except "This reply/topic of a moderator/admin, it's translating automatically in all languages)
+* Next will be replies redesign and refunctional!
 
 = 3.1.1.1 =
 * Added notice
