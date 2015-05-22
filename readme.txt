@@ -3,7 +3,7 @@ Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign
 Tested up to: 4.3
-Stable Tag: 3.2.0.1
+Stable Tag: 3.2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,7 +73,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 == Changelog ==
 
-= 3.2.0.1 =
+= 3.2.0.2 =
 * Added French and Danish translations
 * Updated Brazilian Portuguese translation
 * Added .po files for all translations
