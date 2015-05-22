@@ -76,6 +76,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 = 3.2.0.1 =
 * Added French and Danish translations
 * Updated Brazilian Portuguese translation
+* Added .po files for all translations
 
 = 3.2 =
 * Updated Forum and Topic lists UI
