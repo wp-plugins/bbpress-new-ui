@@ -77,6 +77,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 * Added French and Danish translations
 * Updated Brazilian Portuguese translation
 * Added .po files for all translations
+* Fixed bug with notice: it can not be hidden
 
 = 3.2 =
 * Updated Forum and Topic lists UI
