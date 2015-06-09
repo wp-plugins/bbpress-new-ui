@@ -1873,3 +1873,6 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 #bbpress-forums ul.topic li.bbp-topic-title {
     height: 50px !important;
 }
+#bbpress-forums div.bbp-admin-topic.bbp-reply-position-1 a, #bbpress-forums div.bbp-admin-reply a {
+    color: #fff;
+}
