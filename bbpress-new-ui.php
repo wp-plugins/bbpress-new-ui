@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.2.1
+Version: 3.3
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -11,11 +11,14 @@ Domain Path: /languages
 */
 //----------------------------------------
 // Constructor
-include "inc/adminui/answers-topic.php";
-include "inc/forumui/functions.php";
+include "inc/adminui/bbp-admin-answers.php";
+include "inc/forumui/new-forum.php";
+include "inc/replyui/functions.php";
+include "inc/online-status/online.php";
 class BBP_NEW_UI {
 function __construct() {
 add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
+add_action( 'bbp_theme_before_footer_content', array( $this, 'bbpui_hide_the_copirytht' ) );
 } 
 public function register_plugin_styles() {
 $val = get_option('bbp_new_ui_option');
@@ -29,31 +32,47 @@ $css_path = plugin_dir_path( __FILE__ ) . '/inc/css/light.css';
 wp_enqueue_style( 'bbp_new_ui', plugin_dir_url( __FILE__ ) . '/inc/css/light.css', filemtime( $css_path ) );
 } 
 }
+public function bbpui_hide_the_copirytht() {
+$valnew = get_option('bbp_new_ui_option');
+$valnew = $valnew['2'];
+if ( $valnew == '1') {
+echo'
+<style>
+#bbpress-forums li.bbp-footer::before {
+display:none;
+}
+#bbpress-forums li.bbp-footer {
+    min-height: auto;
+}
+</style>
+';
+}
+}
 } // end class
 
 // Notice
 //----------------------------------------
-add_action('admin_notices', 'new_ui_admin_notice');
+add_action('admin_notices', 'bbp_new_ui_admin_notice');
 
-function new_ui_admin_notice() {
+function bbp_new_ui_admin_notice() {
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'new_ui_ignore_notice') ) {
+	if ( ! get_user_meta($user_id, 'bbp_new_ui_ignore_notice') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('Want to test the new versions of BBP New UI plugin or to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?new_ui_nag_ignore=0');
+        printf(__('Want to test the new versions of BBP New UI plugin or to add your translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?bbp_new_ui_nag_ignore=0');
         echo "</p></div>";
 	}
 }
 
-add_action('admin_init', 'new_ui_nag_ignore');
+add_action('admin_init', 'bbp_new_ui_nag_ignore');
 
-function new_ui_nag_ignore() {
+function bbp_new_ui_nag_ignore() {
 	global $current_user;
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
-        if ( isset($_GET['new_ui_nag_ignore']) && '0' == $_GET['new_ui_nag_ignore'] ) {
-             add_user_meta($user_id, 'new_ui_ignore_notice', 'true', true);
+        if ( isset($_GET['bbp_new_ui_nag_ignore']) && '0' == $_GET['bbp_new_ui_nag_ignore'] ) {
+             add_user_meta($user_id, 'bbp_new_ui_ignore_notice', 'true', true);
 	}
 }
 
@@ -91,6 +110,7 @@ function plugin_settings(){
 register_setting( 'bbp_new_ui_group', 'bbp_new_ui_option' );
 add_settings_section( 'bbp_new_ui_id', 'General Settings bbPress New UI', '', 'bbp_new_ui_page' ); 
 add_settings_field('bbp_new_ui_field', 'Change styles', 'fill_bbp_new_ui_field', 'bbp_new_ui_page', 'bbp_new_ui_id' );
+add_settings_field('bbp_new_ui_field_1', 'Hide the copyright', 'fill_bbp_new_ui_field_1', 'bbp_new_ui_page', 'bbp_new_ui_id' );
 }
 add_action('admin_init', 'plugin_settings');
 
@@ -110,6 +130,16 @@ _e( 'Now active Dark Theme', 'bbp-new-ui' );
 else {
 _e( 'Now active Light Theme', 'bbp-new-ui' );
 }
+}
+
+function fill_bbp_new_ui_field_1(){
+$valnew = get_option('bbp_new_ui_option');
+$valnew = $valnew['2'];
+?>
+<label>
+
+<input type="checkbox" name="bbp_new_ui_option[2]" value="1" <?php checked( 1, $valnew ) ?>  /> <?php _e( 'Hide', 'bbp-new-ui'); ?> </label> <br>
+<?php
 }
 // instantiate our plugin's class
 $GLOBALS['bbp_new_ui'] = new BBP_NEW_UI();

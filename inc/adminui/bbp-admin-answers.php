@@ -11,10 +11,10 @@ class BBP_Admin_Topics {
 	 */
 	function __construct() {
 
-		// show the "Private Reply?" checkbox
+		// show the "admin Reply?" checkbox
 		add_action( 'bbp_theme_before_topic_form_submit_wrapper', array( $this, 'checkbox' ) );
 
-		// save the private reply state
+		// save the admin reply state
 		add_action( 'bbp_new_topic',  array( $this, 'update_topic' ), 0, 6 );
 		add_action( 'bbp_edit_topic',  array( $this, 'update_topic' ), 0, 6 );
 
@@ -44,7 +44,7 @@ class BBP_Admin_Topics {
 
 
 	/**
-	 * Outputs the "Set as private reply" checkbox
+	 * Outputs the "Set as admin reply" checkbox
 	 *
 	 * @since 1.0
 	 *
@@ -56,7 +56,7 @@ class BBP_Admin_Topics {
 		<p>
 
 			<?php if ( current_user_can('moderate') ) : ?>
-			<input name="bbp_admin_topic" id="bbp_admin_topic" type="checkbox"<?php checked( '1', $this->is_private( bbp_get_topic_id() ) ); ?> value="1" tabindex="<?php bbp_tab_index(); ?>" />
+			<input name="bbp_admin_topic" id="bbp_admin_topic" type="checkbox"<?php checked( '1', $this->is_admin( bbp_get_topic_id() ) ); ?> value="1" tabindex="<?php bbp_tab_index(); ?>" />
 			<?php endif; ?>
 
 			<?php if ( current_user_can('moderate') ) : ?>
@@ -72,7 +72,7 @@ class BBP_Admin_Topics {
 
 
 	/**
-	 * Stores the private state on reply creation and edit
+	 * Stores the admin state on reply creation and edit
 	 *
 	 * @since 1.0
 	 *
@@ -113,7 +113,7 @@ class BBP_Admin_Topics {
 	 *
 	 * @return bool
 	 */
-	public function is_private( $topic_id = 0, $reply_id = 0 ) {
+	public function is_admin( $topic_id = 0, $reply_id = 0 ) {
 
 		$retval 	= false;
 
@@ -152,7 +152,7 @@ class BBP_Admin_Topics {
 		}
 
 		if ( ! empty( $reply_id ) ) {
-			$retval = get_post_meta( $reply_id, '_bbp_reply_is_private', true );
+			$retval = get_post_meta( $reply_id, '_bbp_reply_is_admin', true );
 		}
 
 		return (bool) apply_filters( 'bbp_reply_is_admin', (bool) $retval, $reply_id );
@@ -173,7 +173,7 @@ class BBP_Admin_Topics {
 		if( empty( $topic_id ) )
 			$topic_id = bbp_get_topic_id( $topic_id );
 
-		if( $this->is_private( $topic_id ) ) {
+		if( $this->is_admin( $topic_id ) ) {
 
 			$can_view     = true;
 			$current_user = is_user_logged_in() ? wp_get_current_user() : true;
@@ -203,7 +203,7 @@ class BBP_Admin_Topics {
 		if( empty( $reply_id ) )
 			$reply_id = bbp_get_reply_id( $reply_id );
 
-		if( $this->is_private( $reply_id ) ) {
+		if( $this->is_admin( $reply_id ) ) {
 
 			$can_view     = true;
 			$current_user = is_user_logged_in() ? wp_get_current_user() : true;
@@ -253,7 +253,7 @@ class BBP_Admin_Topics {
 		if( bbp_get_reply_post_type() != get_post_type( $reply_id ) )
 			return $classes;
 
-		if( $this->is_private( $reply_id ) )
+		if( $this->is_admin( $reply_id ) )
 			$classes[] = 'bbp-admin-reply';
 
 		return $classes;
@@ -268,7 +268,7 @@ class BBP_Admin_Topics {
 		if( bbp_get_topic_post_type() != get_post_type( $topic_id ) )
 			return $classes;
 
-		if( $this->is_private( $topic_id ) )
+		if( $this->is_admin( $topic_id ) )
 			$classes[] = 'bbp-admin-topic';
 
 		return $classes;

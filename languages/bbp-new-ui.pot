@@ -12,6 +12,14 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: inc/online-status/online.php:39
+msgid "Online"
+msgstr ""
+
+#: inc/online-status/online.php:41
+msgid "Offline"
+msgstr ""
+
 #: bbpress-new-ui.php:44
 msgid ""
 "Want to test the new versions of BBP New UI plugin or to add your "

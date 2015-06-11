@@ -8,22 +8,30 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-05-22 09:51+0100\n"
+"PO-Revision-Date: 2015-06-11 15:22+0300\n"
 "Last-Translator: Svend Rugaard <svendrugaard@gmail.com>\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: da_DK\n"
 
+#: inc/online-status/online.php:39
+msgid "Online"
+msgstr "Online"
+
+#: inc/online-status/online.php:41
+msgid "Offline"
+msgstr "Offline"
+
 #: bbpress-new-ui.php:44
 msgid ""
-"Want to test the new versions of BBP New UI plugin or to add your "
-"translation or have an idea/suggestion? Write me in admin@dk4000.com! | <a "
-"href=\"%1$s\">Hide notice</a>"
+"Want to test the new versions of BBP New UI plugin or to add your translation "
+"or have an idea/suggestion? Write me in admin@dk4000.com! | <a href=\"%1$s"
+"\">Hide notice</a>"
 msgstr ""
 "Ønsker du at teste de nye versioner af BBP nye UI plugin? Vil du tilføje din "
-"oversættelse eller har en idé/forslag? Skriv til mig i admin@dk4000.com! | "
-"<a href=\\\"%1$s\\\">Skjul Info</a>"
+"oversættelse eller har en idé/forslag? Skriv til mig i admin@dk4000.com! | <a "
+"href=\\\"%1$s\\\">Skjul Info</a>"
 
 #: bbpress-new-ui.php:105
 msgid "Change style to Dark color"

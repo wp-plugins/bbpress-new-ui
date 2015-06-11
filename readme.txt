@@ -1,9 +1,9 @@
 === bbPress - New UI ===
 Author URI: http://dk4000.com
 Contributors: daniluk4000
-Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign
-Tested up to: 4.3
-Stable Tag: 3.2.1
+Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign, plugin, online, online status
+Tested up to: 4.3.1
+Stable Tag: 3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,11 +72,23 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 6. New styles for categories: now it looks just fine
 
 == Changelog ==
+
+= 3.3 =
+* Introducing: the "online" function! Now under the name of reply author displays user online status. Feature is still in beta version, so if you find a bug, please contact me on admin@dk4000.com!
+* Header of the replies now combined with the reply content within the <div> class one - so now the size of the header has become dynamic
+* When you click on reply permalink (#xxxx) now opens a window where you can paste the reply permalink to the clipboard or something
+* Very soon you will see our new icons, and we have already made blanks for them
+* In the options page added checkbox to hide my copyright in the footer
+* Improved functional of the lines "moderator" and "administrator" at the top of the answer.
+* 3px blue border-top if user is admin and 2px blue border if user is moderater are added
+* Updated all screenshots
+* Many minor fixes and improvements
+
 = 3.2.1 =
 * Critical layout fixes based on users feedback
 * Fixed the link color of admin replies
 
-= 3.2.0.2 =
+= 3.2.0.3 =
 * Added French and Danish translations
 * Updated Brazilian Portuguese translation
 * Added .po files for all translations

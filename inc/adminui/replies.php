@@ -17,10 +17,6 @@ class BBP_Admin_Replies {
 		add_action( 'bbp_new_reply',  array( $this, 'update_reply' ), 0, 6 );
 		add_action( 'bbp_edit_reply',  array( $this, 'update_reply' ), 0, 6 );
 		// hide reply content
-		add_filter( 'bbp_get_reply_excerpt', array( $this, 'hide_reply' ), 999, 2 );
-		add_filter( 'bbp_get_reply_content', array( $this, 'hide_reply' ), 999, 2 );
-		add_filter( 'the_content', array( $this, 'hide_reply' ), 999 );
-		add_filter( 'the_excerpt', array( $this, 'hide_reply' ), 999 );
 
 		// add a class name indicating the read status
 		add_filter( 'post_class', array( $this, 'reply_post_class' ) );
@@ -43,7 +39,7 @@ class BBP_Admin_Replies {
 		<p>
 
 			<?php if ( current_user_can('moderate') ) : ?>
-			<input name="bbp_admin_reply" id="bbp_admin_reply" type="checkbox"<?php checked( '1', $this->is_private( bbp_get_reply_id() ) ); ?> value="1" tabindex="<?php bbp_tab_index(); ?>" />
+			<input name="bbp_admin_reply" id="bbp_admin_reply" type="checkbox"<?php checked( '1', $this->is_admin( bbp_get_reply_id() ) ); ?> value="1" tabindex="<?php bbp_tab_index(); ?>" />
 			<?php endif; ?>
 
 			<?php if ( current_user_can('moderate') ) : ?>
@@ -58,33 +54,8 @@ class BBP_Admin_Replies {
 
 	}
 
-
 	/**
-	 * Stores the state on reply creation and edit
-	 *
-	 * @since 1.0
-	 *
-	 * @param $reply_id int The ID of the reply
-	 * @param $topic_id int The ID of the topic the reply belongs to
-	 * @param $forum_id int The ID of the forum the topic belongs to
-	 * @param $anonymous_data bool Are we posting as an anonymous user?
-	 * @param $author_id int The ID of user creating the reply, or the ID of the replie's author during edit
-	 * @param $is_edit bool Are we editing a reply?
-	 *
-	 * @return void
-	 */
-	public function update_reply( $reply_id = 0, $topic_id = 0, $forum_id = 0, $anonymous_data = false, $author_id = 0, $is_edit = false ) {
-
-		if( isset( $_POST['bbp_admin_reply'] ) )
-			update_post_meta( $reply_id, '_bbp_reply_is_private', '1' );
-		else
-			delete_post_meta( $reply_id, '_bbp_reply_is_private' );
-
-	}
-
-
-	/**
-	 * Determines if a reply is marked as private
+	 * Determines if a reply is marked as admin
 	 *
 	 * @since 1.0
 	 *
@@ -92,7 +63,7 @@ class BBP_Admin_Replies {
 	 *
 	 * @return bool
 	 */
-	public function is_private( $reply_id = 0 ) {
+	public function is_admin( $reply_id = 0 ) {
 
 		$retval 	= false;
 
@@ -111,12 +82,11 @@ class BBP_Admin_Replies {
 		}
 
 		if ( ! empty( $reply_id ) ) {
-			$retval = get_post_meta( $reply_id, '_bbp_reply_is_private', true );
+			$retval = get_post_meta( $reply_id, '_bbp_reply_is_admin', true );
 		}
 
-		return (bool) apply_filters( 'bbp_reply_is_private', (bool) $retval, $reply_id );
+		return (bool) apply_filters( 'bbp_reply_is_admin', (bool) $retval, $reply_id );
 	}
-
 
 	/**
 	 * Hides the reply content for users that do not have permission to view it
@@ -133,7 +103,7 @@ class BBP_Admin_Replies {
 		if( empty( $reply_id ) )
 			$reply_id = bbp_get_reply_id( $reply_id );
 
-		if( $this->is_private( $reply_id ) ) {
+		if( $this->is_admin( $reply_id ) ) {
 
 			$can_view     = true;
 			$current_user = is_user_logged_in() ? wp_get_current_user() : true;
@@ -156,7 +126,7 @@ class BBP_Admin_Replies {
 			}
 
 			if( ! $can_view ) {
-				$content = __( 'This reply has been marked as private.', 'bbp_admin_replies' );
+				$content = __( 'This reply has been marked as admin.', 'bbp_admin_replies' );
 			}
 		}
 
@@ -177,7 +147,7 @@ class BBP_Admin_Replies {
 	 */
 	public function prevent_subscription_email( $message, $reply_id, $topic_id ) {
 
-		if( $this->is_private( $reply_id ) ) {
+		if( $this->is_admin( $reply_id ) ) {
 			$this->subscription_email( $message, $reply_id, $topic_id );
 			return false;
 		}
@@ -187,7 +157,7 @@ class BBP_Admin_Replies {
 
 
 	/**
-	 * Sends the new reply notification email to moderators on private replies
+	 * Sends the new reply notification email to moderators on admin replies
 	 *
 	 * @since 1.0
 	 *
@@ -199,9 +169,9 @@ class BBP_Admin_Replies {
 	 */
 	public function subscription_email( $message, $reply_id, $topic_id ) {
 
-		if( ! $this->is_private( $reply_id ) ) {
+		if( ! $this->is_admin( $reply_id ) ) {
 
-			return false; // reply isn't private so do nothing
+			return false; // reply isn't admin so do nothing
 
 		}
 
@@ -251,7 +221,7 @@ class BBP_Admin_Replies {
 
 
 	/**
-	 * Adds a new class to replies that are marked as private
+	 * Adds a new class to replies that are marked as admin
 	 *
 	 * @since 1.0
 	 *
@@ -267,7 +237,7 @@ class BBP_Admin_Replies {
 		if( bbp_get_reply_post_type() != get_post_type( $reply_id ) )
 			return $classes;
 
-		if( $this->is_private( $reply_id ) )
+		if( $this->is_admin( $reply_id ) )
 			$classes[] = 'bbp-admin-reply';
 
 		return $classes;
