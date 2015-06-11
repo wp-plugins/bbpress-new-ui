@@ -75,7 +75,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 
 = 3.3 =
 * Introducing: the "online" function! Now under the name of reply author displays user online status. Feature is still in beta version, so if you find a bug, please contact me on admin@dk4000.com!
-* Header of the replies now combined with the reply content within the <div> class one - so now the size of the header has become dynamic
+* Header of the replies now combined with the reply content within the div class - so now the size of the header has become dynamic
 * When you click on reply permalink (#xxxx) now opens a window where you can paste the reply permalink to the clipboard or something
 * Very soon you will see our new icons, and we have already made blanks for them
 * In the options page added checkbox to hide my copyright in the footer
