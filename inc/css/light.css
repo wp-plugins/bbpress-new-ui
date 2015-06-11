@@ -1965,3 +1965,6 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     width: auto;
     box-sizing: content-box !important;
 }
+#bbpress-forums .forum li.bbp-forum-freshness, li.bbp-topic-freshness {
+    width: 35% !important;
+}

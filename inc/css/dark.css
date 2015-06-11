@@ -2693,3 +2693,6 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     color: #fff;
     border: 1px solid #aaa;
 }
+#bbpress-forums .forum li.bbp-forum-freshness, li.bbp-topic-freshness {
+    width: 35% !important;
+}
