@@ -132,7 +132,7 @@ elem.parentNode.removeChild(elem);
 		<?php endwhile; ?>
 
 	</li><!-- .bbp-body -->
-
+<?php do_action( 'bbp_theme_before_footer_content' ); ?>
 	<li class="bbp-footer">
 
 		<div class="tr">
