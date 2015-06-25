@@ -60,7 +60,7 @@ class BBP_Admin_Topics {
 			<?php endif; ?>
 
 			<?php if ( current_user_can('moderate') ) : ?>
-				<label for="bbp_admin_topic"><?php $locale = get_locale(); if($locale == "ru_RU") : echo'Эта тема модератора/админа'; elseif($locale == "de_DE") : echo'Das ist ein '; _e( 'Topic', bbpress); echo' von einem Moderator/Admin'; elseif($locale == "pt_BR"): echo'Este '; _e('Topic', bbpress); echo' é de um moderador/admin'; else: echo'This '; _e('Topic', bbpress); echo' of a '; _e('Moderator', bbpress); echo'/'; _e( "Keymaster", bbpress); endif; ?></label>
+				<label for="bbp_admin_topic"><?php $locale = get_locale(); if($locale == "ru_RU") : echo'Эта тема модератора/админа'; elseif($locale == "de_DE") : echo'Das ist ein '; _e( 'Topic', 'bbpress'); echo' von einem Moderator/Admin'; elseif($locale == "pt_BR"): echo'Este '; _e('Topic', 'bbpress'); echo' é de um moderador/admin'; else: echo'This '; _e('Topic', 'bbpress'); echo' of a '; _e('Moderator', 'bbpress'); echo'/'; _e( "Keymaster", 'bbpress'); endif; ?></label>
 				<label for="bbp_admin_topic"><?php _e( '', 'bbp_admin_topics' ); ?></label>
 
 			<?php endif; ?>

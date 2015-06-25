@@ -44,7 +44,7 @@ class BBP_Admin_Replies {
 
 			<?php if ( current_user_can('moderate') ) : ?>
 
-				<label for="bbp_admin_reply"><?php $locale = get_locale(); if($locale == "ru_RU") : echo'Это ответ модератора/админа'; elseif($locale == "de_DE") : echo'Das ist eine '; _e( 'Reply', bbpress); echo' von einem Moderator/Admin'; elseif($locale == "pt_BR"): echo'Esta '; _e('Reply', bbpress); echo' é de um moderador/admin'; else: echo'This '; _e('Reply', bbpress); echo' of a '; _e('Moderator', bbpress); echo'/'; _e( "Keymaster", bbpress); endif; ?></label>
+				<label for="bbp_admin_reply"><?php $locale = get_locale(); if($locale == "ru_RU") : echo'Это ответ модератора/админа'; elseif($locale == "de_DE") : echo'Das ist eine '; _e( 'Reply', 'bbpress'); echo' von einem Moderator/Admin'; elseif($locale == "pt_BR"): echo'Esta '; _e('Reply', 'bbpress'); echo' é de um moderador/admin'; else: echo'This '; _e('Reply', 'bbpress'); echo' of a '; _e('Moderator', 'bbpress'); echo'/'; _e( "Keymaster", 'bbpress'); endif; ?></label>
 				<label for="bbp_admin_reply"><?php _e( '', 'bbp_admin_replies' ); ?></label>
 
 			<?php endif; ?>

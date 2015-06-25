@@ -2714,3 +2714,9 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     color: #ddd !important;
     background: rgba(150, 150, 150, 0.3) none repeat scroll 0% 0% !important;
 }
+#bbpress-forums .status-category li.bbp-in-forum-freshness {
+    margin-left: 0px;
+}
+.bbp-forum-inter-content {
+    width: 65.3%;
+}

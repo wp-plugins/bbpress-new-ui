@@ -1997,3 +1997,9 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 #bbpress-forums span.bbp-admin-links a {
     margin-right: 4px;
 }
+#bbpress-forums .status-category li.bbp-in-forum-freshness {
+    margin-left: 0px;
+}
+.bbp-forum-inter-content {
+    width: 65.3%;
+}
