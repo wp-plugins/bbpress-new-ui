@@ -33,7 +33,6 @@ function bbp_user_online_status(){
     global $bbp_ui;
     echo '<ul>';
     $user_id = bbp_get_reply_author_id($reply_id);
-    if ($bbp_ui['activate'] == true) {
         echo '<li>';
         if (is_user_online($user_id)) {
             echo '<div class="status_online is_online">'.__('Online', 'bbp-new-ui').'</div>';
@@ -41,7 +40,6 @@ function bbp_user_online_status(){
             echo '<div class="status_online is_not_online">'.__('Offline', 'bbp-new-ui').'</div>';
         }
         echo '</li>';
-    }
 }
 
 add_action('wp_logout', 'set_user_logged_out');
