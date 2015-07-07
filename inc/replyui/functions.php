@@ -5,6 +5,7 @@ class BBP_New_Replies {
 
 	add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 	add_action( 'bbp_template_after_replies_loop', array( $this, 'divblock1' ) );
+        add_action( 'bbp_theme_before_reply_form_content', array( $this, 'divblock2' ) );
 
 	} // end constructor
 
@@ -19,6 +20,44 @@ class BBP_New_Replies {
 	public function register_plugin_styles() {
 		$css_path = plugin_dir_path( __FILE__ ) . '/css/general.css';
 	    wp_enqueue_style( 'BBP_New_Replies_style', plugin_dir_url( __FILE__ ) . '/css/general.css' );
+	}
+
+	/**
+	 * @since 3.4
+	 *
+	 * @return void
+	 */
+	public function divblock2() {
+?>
+<style>
+#qt_bbp_reply_content_spoiler {
+    background-image: none !important;
+    width: auto !important;
+    font-size: 13px !important;
+}
+.spoilerui {
+    background: #4C4C4C none repeat scroll 0% 0%;
+    color: #363636 !important;
+    padding: 0px 5px;
+    font-weight: 300;
+    float: left;
+}
+.spoilerui:hover {
+    color: #fff !important;
+}
+</style>
+<script>
+jQuery(document).ready( function() {
+
+	/* Use backticks instead of <code> for the Code button in the editor */
+	if ( typeof( edButtons ) !== 'undefined' ) {
+		edButtons[112] = new QTags.TagButton( 'spoiler', 'spoiler', '<div class="spoilerui">', '</div>', 'c' );
+		QTags._buttonsInit();
+	}
+
+});
+</script>
+<?php
 	}
 
 	/**
@@ -141,7 +180,8 @@ if( user_can( $user_id, 'moderate' ) ){
 #bbpress-forums div.user-id-';bbp_reply_author_id();echo' {
     border-color: #3498DB !important;
     border-width: 2px !important;
-    border-left: 0px !important;
+    border-top: 0px !important;
+    border-left-style: solid !important;
 }
 </style>';
 }
@@ -167,7 +207,8 @@ if( user_can( $user_id, 'manage_options' ) ){
 #bbpress-forums div.user-id-';bbp_reply_author_id();echo' {
     border-color: #3498DB !important;
     border-width: 3px !important;
-    border-left: 0px !important;
+    border-top: 0px !important;
+    border-left-style: solid !important;
 }
 </style>';
 }

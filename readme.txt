@@ -3,7 +3,7 @@ Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign, plugin, online, online status
 Tested up to: 4.3.1
-Stable Tag: 3.3.3
+Stable Tag: 3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,16 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 6. New styles for categories: now it looks just fine
 
 == Changelog ==
+
+= 3.4 =
+* Settings page redesign: Now looks great in purple color
+* New button in reply form: Spoiler, test it! Now in BETA version
+* Improvements for images UI
+* Improvements for revision UI
+* Improvements for replies list UI
+* Some improvements and fixes
+* You can find the link to the Options page in your Plugin list page
+
 
 = 3.3.3 =
 * Inproducing: online status is now not in beta! Meet it :)
