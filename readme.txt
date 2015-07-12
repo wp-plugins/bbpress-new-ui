@@ -1,9 +1,9 @@
 === bbPress - New UI ===
 Author URI: http://dk4000.com
 Contributors: daniluk4000
-Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign, plugin, online, online status
-Tested up to: 4.3.1
-Stable Tag: 3.4
+Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign, plugin, online, online status, design
+Tested up to: 4.4
+Stable Tag: 3.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,20 +33,25 @@ Great choice between dark/light colors (Scheenshots two, three and four)
   
 Closed and sticky themes are highlighted with a special icon (Screenshot 5)
  
-New styles for categories: now it looks just fine (Screenshot 6)
+New styles for categories: now they look just fine (Screenshot 6)
 
-Many changes aimed at improving the use of the forum.
+Many changes which improving the use of the forum.
 
 
 == Frequently Asked Questions ==
 
 = How do I activate a new style? =
 
-Just activate the plugin. The styles are automatically activated.
+Just activate the plugin. The styles will be activated automatically.
 
 = How can I change the style? =
 
 Find the tab "New bbPress UI" in the settings in the admin panel and select "switch color" or edit files in inc/css
+
+= How can I hide the copyright? =
+
+Find the tab "New bbPress UI" in the settings in the admin panel and select checkbox "hide"
+
 
 == Upgrade Notice ==
 
@@ -72,6 +77,12 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select "swi
 6. New styles for categories: now it looks just fine
 
 == Changelog ==
+
+= 3.4.1 =
+* General fixes for responsive design + added responsive design for forums list
+* Improvements for topics list
+* General improvements for dark theme
+* Some fixes and improvements
 
 = 3.4 =
 * Settings page redesign: Now looks great in purple color

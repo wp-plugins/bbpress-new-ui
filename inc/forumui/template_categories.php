@@ -57,7 +57,7 @@
 			<div class="forum in-forum"><a href="' . esc_url( $permalink1 ) . '" class="bbp-forum-in-link">' . $title1 . '</a>
 			<li class="bbp-forum-in-topic-count">'.bbp_get_forum_topic_count( $sub_forum->ID ).'</li>
 			<li class="bbp-forum-in-reply-count">'.bbp_get_forum_reply_count( $sub_forum->ID ).'</li>
-						<li class="bbp-in-forum-freshness">
+						<li id="element" class="bbp-in-forum-freshness">
 			<a href="' . esc_url( $permalink ) . '" class="bbp-topic-in-link">' . $title . '  '. bbp_get_forum_freshness_link( $sub_forum->ID ) .'</a>
 			<div class="bbp-in-forum-freshness-author">'.bbp_get_author_link( array( 'post_id' => bbp_get_forum_last_active_id($sub_forum->ID), 'size' => 14 ) ).'</div>
 			</li>

@@ -2053,6 +2053,18 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 #bbpress-forums .status-category li.bbp-in-forum-freshness {
     width: 34%;
 }
+#bbpress-forums .bbp-forum-in-link {
+    font-size: 13px;
+    font-weight: 300 !important;
+}
+#bbpress-forums .bbp-header {
+    display: none;
+}
+#bbpress-forums .bbp-body div.bbp-reply-author {
+    max-width: 100% !important;
+    width: 84% !important;
+    float: none;
+}
 }
 #bbpress-forums div.bbp-topic-content img, #bbpress-forums div.bbp-reply-content img {
     max-width: 100%;
@@ -2091,4 +2103,46 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 #bbpress-forums div.reply {
     margin-top: 1px !important;
     border-radius: 0px !important;
+}
+
+#bbpress-forums .status-category li.bbp-in-forum-freshness {
+    width: 35%;
+    margin-left: 0px;
+}
+#bbpress-forums .bbp-forum-in-topic-count, #bbpress-forums .bbp-forum-in-reply-count {
+    transition: all 0.3s ease-in-out 0s;
+    width: 10% !important;
+    margin: 0px !important;
+}
+.bbp-forum-inter-content {
+    width: 65% !important;
+    margin-right: 0px;
+}
+#bbpress-forums ul.status-category a.bbp-author-name {
+    background: transparent none repeat scroll 0% 0% !important;
+    border: 0px none !important;
+    width: auto;
+    padding: 0px;
+}
+#bbpress-forums .bbp-forum-title {
+    font-weight: 600;
+    font-size: 18px !important;
+}
+#bbpress-forums .bbp-topics li.bbp-body ul.topic {
+    border-bottom: 1px solid #AAA !important;
+    box-shadow: 1px 1px 0.5px 0px #DDD;
+    border-left: 2px solid #AAA !important;
+    border-top: 0px none !important;
+}
+#bbpress-forums .bbp-topics li.bbp-body ul.bbp-admin-topic {
+    border-left-color: rgb(52, 152, 219) !important;
+}
+#bbpress-forums .bbp-topics li.bbp-body ul.topic {
+    margin: 0px !important;
+    border-bottom: 0px !important;
+    margin-bottom: 1px !important;
+    border-radius: 0px !important;
+}
+#bbpress-forums li.bbp-body {
+    margin-bottom: 10px;
 }
