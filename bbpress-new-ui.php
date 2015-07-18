@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.4.1
+Version: 3.4.2
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -11,7 +11,13 @@ Domain Path: /languages
 */
 //----------------------------------------
 // Constructor
+$val2 = get_option('bbp_new_ui_option');
+$val2 = $val2['3'];
+if ( $val2 == '1'){
+}
+else {
 include "inc/adminui/bbp-admin-answers.php";
+}
 include "inc/forumui/new-forum.php";
 include "inc/replyui/functions.php";
 include "inc/online-status/online.php";
@@ -105,7 +111,7 @@ add_action( 'plugins_loaded', 'bbp_new_ui_load_plugin_textdomain' );
 add_action('admin_menu', 'add_plugin_page');
 
 function add_plugin_page(){
-add_options_page( 'bbPress New UI Settings', ' bbPress New UI', 'manage_options', 'bbp_new_ui', 'bbp_new_ui_options_page_output' );
+add_options_page( ''.__('Settings').' bbPress New UI', ' bbPress New UI', 'manage_options', 'bbp_new_ui', 'bbp_new_ui_options_page_output' );
 }
 
 function bbp_new_ui_options_page_output(){
@@ -141,15 +147,34 @@ status {
     color: #fff;
     margin-top: 2px;
 }
+.desc code {
+    background: rgba(139, 0, 0, 0.5);
+    color: #fff;
+}
 .noimgclass .submit input {
     box-shadow: 0px 0px;
     border-radius: 0px;
     border: 0px none;
     background: #434A68;
 }
+.desc {
+    margin-top: 5px;
+    background: #434A68;
+    padding: 5px;
+    color: #fff;
+}
 .light {
     background: #ddd;
     color: #000;
+}
+eng {
+    background: #ddd;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
 }
 </style>
 <h2><?php echo get_admin_page_title() ?></h2>
@@ -165,10 +190,16 @@ status {
 // Register Settings
 //----------------------------------------
 function plugin_settings(){ 
+$pluginname = __( 'bbPress New UI' );
+$settingsname = __( 'Settings' );
+$changestylename = __( ''.__('Change').' '.__('Style').'', 'bbp-new-ui' );
+$hidename = __( ''.__('Hide').' '.__('the Copyright', 'bbp-new-ui').'', 'bbp-new-ui' );
+$bbpaaname = __( ''.__('Settings').' bbPress Admin Answers', 'bbp-new-ui');
 register_setting( 'bbp_new_ui_group', 'bbp_new_ui_option' );
 add_settings_section( 'bbp_new_ui_id', '', '', 'bbp_new_ui_page' ); 
-add_settings_field('bbp_new_ui_field', 'Change styles', 'fill_bbp_new_ui_field', 'bbp_new_ui_page', 'bbp_new_ui_id' );
-add_settings_field('bbp_new_ui_field_1', 'Hide the copyright', 'fill_bbp_new_ui_field_1', 'bbp_new_ui_page', 'bbp_new_ui_id' );
+add_settings_field('bbp_new_ui_field', $changestylename, 'fill_bbp_new_ui_field', 'bbp_new_ui_page', 'bbp_new_ui_id' );
+add_settings_field('bbp_new_ui_field_1', $hidename, 'fill_bbp_new_ui_field_1', 'bbp_new_ui_page', 'bbp_new_ui_id' );
+add_settings_field('bbp_new_ui_field_2', $bbpaaname, 'fill_bbp_new_ui_field_2', 'bbp_new_ui_page', 'bbp_new_ui_id' );
 }
 add_action('admin_init', 'plugin_settings');
 
@@ -179,7 +210,6 @@ $val = $val['1'];
 $posts = get_posts();
 ?>
 <label>
-
 <input type="checkbox" name="bbp_new_ui_option[1]" value="1" <?php checked( 1, $val ) ?>  /> <?php _e( 'Change style to Dark color', 'bbp-new-ui'); ?></label> <br>
 <?php
 if ( $val == '1') {
@@ -190,13 +220,23 @@ echo'<status class="light">';_e( 'Now active Light Theme', 'bbp-new-ui' );echo'<
 }
 }
 
+function fill_bbp_new_ui_field_2(){
+$val2 = get_option('bbp_new_ui_option');
+$val2 = $val2['3'];
+?>
+<label>
+
+<input type="checkbox" name="bbp_new_ui_option[3]" value="1" <?php checked( 1, $val2 ) ?>  /> <?php _e( 'Deactivate' ); ?>  bbP New UI Admin Answers  <?php _e('</br><eng>English only:</eng></br>', 'bbp-new-ui'); ?> <div class="desc"><?php _e( 'If you have <code>call_user_func_array() [function.call-user-func-array]: First argument is expected to be a valid callback, BBP_Admin_Replies::update_reply</code> error and same and if you have all blue posts if you check "this <strong>topic</strong> of keymaster/moderator check this checkbox', 'bbp-new-ui' ); ?></div> </label><br>
+<?php
+}
+
 function fill_bbp_new_ui_field_1(){
 $valnew = get_option('bbp_new_ui_option');
 $valnew = $valnew['2'];
 ?>
 <label>
 
-<input type="checkbox" name="bbp_new_ui_option[2]" value="1" <?php checked( 1, $valnew ) ?>  /> <?php _e( 'Hide', 'bbp-new-ui'); ?> </label></div><br>
+<input type="checkbox" name="bbp_new_ui_option[2]" value="1" <?php checked( 1, $valnew ) ?>  /> <?php _e( 'Hide'); ?> </label></div><br>
 <?php
 }
 // instantiate our plugin's class

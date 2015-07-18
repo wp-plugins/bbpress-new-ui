@@ -2746,11 +2746,18 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 }
 .bbp-author-name {
     font-size: 14px !important;
-    background: #ccc !important;
-    border: 1px solid #aaa;
+    background: #2A2C2F !important;
+    border-top: 1px solid #555;
+    border-right: 1px solid #555;
+    border-bottom: 1px solid #555;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
     padding: 2px;
     margin-bottom: -1px !important;
-    border-left: 0px !important;
+    border-left: 0px none !important;
     margin-left: 1px !important;
     width: 100%;
 }
@@ -2922,4 +2929,28 @@ div.reply, div.topic {
     border-left: 2px solid rgb(27, 97, 191) !important;
     border-top-left-radius: 3px !important;
     border-top: 0px none !important;
+}
+.bbp-pagination-count {
+    background: #11151B;
+    border-bottom: 1px solid #34383D !important;
+    border-top: 1px solid #34383D !important;
+    color: #fff;
+    padding: 2px;
+    margin-top: 5px;
+}
+#subscription-toggle, #favorite-toggle {
+    float: right;
+}
+.bbp-breadcrumb {
+    margin-top: 5px;
+}
+#bbpress-forums .bbp-breadcrumb a, #bbpress-forums .bbp-breadcrumb span {
+    background: rgb(25, 25, 25) url("../img/theme.gif") repeat scroll 0% 0% !important;
+    border-left: 1px solid rgb(136, 136, 136);
+    border-right: 1px solid rgb(136, 136, 136);
+    padding: 3px;
+}
+#bbpress-forums span.bbp-breadcrumb-sep {
+    background: transparent !important;
+    border: 0px;
 }

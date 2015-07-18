@@ -2146,3 +2146,28 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
 #bbpress-forums li.bbp-body {
     margin-bottom: 10px;
 }
+.bbp-pagination-count {
+    background: #eee;
+    border-bottom: 1px solid #BEBEBE !important;
+    border-top: 1px solid #BEBEBE !important;
+    color: #666;
+    padding: 2px;
+    margin-top: 5px;
+}
+#subscription-toggle, #favorite-toggle {
+    float: right;
+}
+.bbp-breadcrumb {
+    margin-top: 5px;
+}
+#bbpress-forums .bbp-breadcrumb a, #bbpress-forums .bbp-breadcrumb span {
+    background: #DDD none repeat scroll 0% 0% !important;
+    color: #666;
+    border-left: 1px solid rgb(136, 136, 136);
+    border-right: 1px solid rgb(136, 136, 136);
+    padding: 3px;
+}
+#bbpress-forums span.bbp-breadcrumb-sep {
+    background: transparent !important;
+    border: 0px;
+}

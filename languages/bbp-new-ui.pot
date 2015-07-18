@@ -16,6 +16,10 @@ msgstr ""
 msgid "Online"
 msgstr ""
 
+#: bbpress-new-ui.php:187
+msgid "the Copyright"
+msgstr ""
+
 #: inc/online-status/online.php:41
 msgid "Offline"
 msgstr ""

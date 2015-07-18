@@ -3,7 +3,7 @@ Author URI: http://dk4000.com
 Contributors: daniluk4000
 Tags: bbPress, new UI, UI, Forums, daniluk4000, Forum, Interface, Redesign, plugin, online, online status, design
 Tested up to: 4.4
-Stable Tag: 3.4.1
+Stable Tag: 3.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,10 +27,12 @@ If you want to add your language - just write me in admin@dk4000.com!
 
 Features:
 
-Redesigned a reply form (Screenshot 1)
+Reply Form Redesign (Screenshot 1)
   
-Great choice between dark/light colors (Scheenshots two, three and four)
-  
+Great choice between dark/light colors (Scheenshots 2,3)
+
+Nice Admin Panel with some features (Scheenshot 4)
+
 Closed and sticky themes are highlighted with a special icon (Screenshot 5)
  
 New styles for categories: now they look just fine (Screenshot 6)
@@ -69,14 +71,22 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select chec
 
 == Screenshots ==
 
-1. Redesigned a reply form
+1. Reply Form Redesign
 2. Dark color
 3. Light color
 4. Plugin settings
-5. Closed and fastened themes are highlighted with a special icon
-6. New styles for categories: now it looks just fine
+5. Closed and sticky themes are highlighted with a special icon
+6. New styles for categories: now they look just fine
 
 == Changelog ==
+
+= 3.4.2 =
+* Fixed author background on mobile devices in Dark theme
+* You can deactivate bbPress Admin Answers (this reply/topic of a moderator/admin checkbox) in Settings page
+* Added translation for Settings page
+* Screenshots has been updated
+* Updated ReadMe grammatics
+* Improvements for both themes
 
 = 3.4.1 =
 * General fixes for responsive design + added responsive design for forums list
