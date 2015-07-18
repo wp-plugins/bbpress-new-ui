@@ -2171,3 +2171,15 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     background: transparent !important;
     border: 0px;
 }
+#bbpress-forums .bbp-reply-post-date {
+    height: 24px;
+    float: left;
+    margin-left: 10px;
+    font-size: 14px !important;
+}
+#bbpress-forums .bbp-reply-permalink {
+    margin-top: 0px;
+    height: 24px;
+    font-size: 14px !important;
+    margin-left: -1px;
+}
