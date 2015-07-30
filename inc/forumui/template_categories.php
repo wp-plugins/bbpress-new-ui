@@ -1,4 +1,4 @@
-<?php function bbp_list_of_forums( $args = '' ) {
+<?php function bbpui_list_of_forums( $args = '' ) {
 
 	// Define used variables
 	$output = $sub_forums = $topic_count = $reply_count = $counts = '';

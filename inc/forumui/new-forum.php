@@ -12,7 +12,7 @@ class BBP_New_Forum {
 	function __construct() {
 
 		// show the "Private Reply?" checkbox
-		add_action( 'bbp_template_after_forums_loop', array( $this, 'divblock' ) );
+		add_action( 'bbp_template_after_forums_loop', array( $this, 'bbpuidivblock' ) );
 
 	} // end constructor
 
@@ -23,7 +23,7 @@ class BBP_New_Forum {
 	 *
 	 * @return void
 	 */
-	public function divblock() {
+	public function bbpuidivblock() {
 ?> 
 <script>
 var elem = document.getElementsByClassName("bbp-forums")[0];
@@ -125,7 +125,7 @@ elem.parentNode.removeChild(elem);
 
 		</p>
 	</li>
-	<?php  bbp_list_of_forums(); ?>
+	<?php  bbpui_list_of_forums(); ?>
 </ul><!-- #bbp-forum-<?php bbp_forum_id(); ?> -->
 
 

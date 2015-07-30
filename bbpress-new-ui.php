@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress New UI
 Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.4.2
+Version: 3.4.3
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -38,10 +38,10 @@ function bbpui_plugin_action_links( $actions, $plugin_file ){
 // Iniciate our plugin class
 class BBP_NEW_UI {
 function __construct() {
-add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
+add_action( 'wp_enqueue_scripts', array( $this, 'bbpui_register_plugin_styles' ) );
 add_action( 'bbp_theme_before_footer_content', array( $this, 'bbpui_hide_the_copirytht' ) );
 } 
-public function register_plugin_styles() {
+public function bbpui_register_plugin_styles() {
 $val = get_option('bbp_new_ui_option');
 $val = $val['1'];
 if ( $val == '1'){
@@ -108,9 +108,9 @@ add_action( 'plugins_loaded', 'bbp_new_ui_load_plugin_textdomain' );
 
 //----------------------------------------
 // Create plugin settings page
-add_action('admin_menu', 'add_plugin_page');
+add_action('admin_menu', 'bbpui_add_plugin_page');
 
-function add_plugin_page(){
+function bbpui_add_plugin_page(){
 add_options_page( ''.__('Settings').' bbPress New UI', ' bbPress New UI', 'manage_options', 'bbp_new_ui', 'bbp_new_ui_options_page_output' );
 }
 
@@ -189,7 +189,7 @@ eng {
 
 // Register Settings
 //----------------------------------------
-function plugin_settings(){ 
+function bbpui_plugin_settings(){ 
 $pluginname = __( 'bbPress New UI' );
 $settingsname = __( 'Settings' );
 $changestylename = __( ''.__('Change').' '.__('Style').'', 'bbp-new-ui' );
@@ -201,7 +201,7 @@ add_settings_field('bbp_new_ui_field', $changestylename, 'fill_bbp_new_ui_field'
 add_settings_field('bbp_new_ui_field_1', $hidename, 'fill_bbp_new_ui_field_1', 'bbp_new_ui_page', 'bbp_new_ui_id' );
 add_settings_field('bbp_new_ui_field_2', $bbpaaname, 'fill_bbp_new_ui_field_2', 'bbp_new_ui_page', 'bbp_new_ui_id' );
 }
-add_action('admin_init', 'plugin_settings');
+add_action('admin_init', 'bbpui_plugin_settings');
 
 function fill_bbp_new_ui_field(){
 $val = get_option('bbp_new_ui_option');

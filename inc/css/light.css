@@ -2183,3 +2183,11 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     font-size: 14px !important;
     margin-left: -1px;
 }
+.bbp-meta .bbp-class-box {
+    width: 90%;
+    float: left;
+    margin-left: 11px;
+    margin-top: -2px;
+    z-index: 5;
+    position: relative;
+}

@@ -4,8 +4,8 @@ class BBP_New_Replies {
 	function __construct() {
 
 	add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
-	add_action( 'bbp_template_after_replies_loop', array( $this, 'divblock1' ) );
-        add_action( 'bbp_theme_before_reply_form_content', array( $this, 'divblock2' ) );
+	add_action( 'bbp_template_after_replies_loop', array( $this, 'bbpuidivblocktwo' ) );
+        add_action( 'bbp_theme_before_reply_form_content', array( $this, 'bbpuidivblockone' ) );
 
 	} // end constructor
 
@@ -27,7 +27,7 @@ class BBP_New_Replies {
 	 *
 	 * @return void
 	 */
-	public function divblock2() {
+	public function bbpuidivblockone() {
 ?>
 <style>
 #qt_bbp_reply_content_spoiler {
@@ -65,7 +65,7 @@ jQuery(document).ready( function() {
 	 *
 	 * @return void
 	 */
-	public function divblock1() {
+	public function bbpuidivblocktwo() {
 ?>
 <script>
 var elem = document.getElementsByClassName("bbp-replies")[0];
