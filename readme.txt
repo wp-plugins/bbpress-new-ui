@@ -83,6 +83,7 @@ Find the tab "New bbPress UI" in the settings in the admin panel and select chec
 = 3.4.4 =
 * Security fixes
 * New plugin notice
+* Updated branches tree
 
 = 3.4.3 =
 * Added Serbian Language support (thanks http://webhostinggeeks.com/ team)
