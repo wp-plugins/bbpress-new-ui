@@ -10,19 +10,6 @@ class BBP_New_Replies {
 	} // end constructor
 
 	/**
-	/**
-	 * Load the plugin's CSS files
-	 *
-	 * @since 1.0
-	 *
-	 * @return void
-	 */
-	public function register_plugin_styles() {
-		$css_path = plugin_dir_path( __FILE__ ) . '/css/general.css';
-	    wp_enqueue_style( 'BBP_New_Replies_style', plugin_dir_url( __FILE__ ) . '/css/general.css' );
-	}
-
-	/**
 	 * @since 3.4
 	 *
 	 * @return void

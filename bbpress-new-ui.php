@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: bbPress New UI
-Description: A great plugin completely changes the entire design bbpress in light or dark color
-Version: 3.4.3
+Description: A great plugin completely changes the entire design of bbpress in light or dark color
+Version: 3.4.4
 Author: Daniel 4000
 Author URI: http://dk4000.com
 Contributors: daniluk4000
@@ -98,6 +98,33 @@ function bbp_new_ui_nag_ignore() {
              add_user_meta($user_id, 'bbp_new_ui_ignore_notice', 'true', true);
 	}
 }
+
+// Notice
+//----------------------------------------
+add_action('admin_notices', 'bbp_new_ui_admin_notice_2');
+
+function bbp_new_ui_admin_notice_2() {
+	global $current_user ;
+        $user_id = $current_user->ID;
+        /* Check that the user hasn't already clicked to ignore the message */
+	if ( ! get_user_meta($user_id, 'bbp_new_ui_ignore_notice_2') ) {
+        echo '<div class="updated"><p>'; 
+        printf(__('Please try our new plugin - <a href="https://wordpress.org/plugins/bp-new-ui/">BuddyPress New UI</a> | <a href="%1$s">Hide notice</a>', 'bbp-new-ui'), '?bbp_new_ui_nag_ignore_2=0');
+        echo "</p></div>";
+	}
+}
+
+add_action('admin_init', 'bbp_new_ui_nag_ignore_2');
+
+function bbp_new_ui_nag_ignore_2() {
+	global $current_user;
+        $user_id = $current_user->ID;
+        /* If user clicks to ignore the notice, add that to their user meta */
+        if ( isset($_GET['bbp_new_ui_nag_ignore_2']) && '0' == $_GET['bbp_new_ui_nag_ignore_2'] ) {
+             add_user_meta($user_id, 'bbp_new_ui_ignore_notice_2', 'true', true);
+	}
+}
+
 
 // Load
 //----------------------------------------

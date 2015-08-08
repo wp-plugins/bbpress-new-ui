@@ -21,9 +21,6 @@ class BBP_Admin_Replies {
 		// add a class name indicating the read status
 		add_filter( 'post_class', array( $this, 'reply_post_class' ) );
 
-		// register css files
-		add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
-
 	} // end constructor
 
 	/**
@@ -241,18 +238,6 @@ class BBP_Admin_Replies {
 			$classes[] = 'bbp-admin-reply';
 
 		return $classes;
-	}
-
-	/**
-	 * Load the plugin's CSS files
-	 *
-	 * @since 1.0
-	 *
-	 * @return void
-	 */
-	public function register_plugin_styles() {
-		$css_path = plugin_dir_path( __FILE__ ) . '/css/style-replies.css';
-	    wp_enqueue_style( 'bbp_admin_replies_style', plugin_dir_url( __FILE__ ) . '/css/style-replies.css' );
 	}
 
 } // end class

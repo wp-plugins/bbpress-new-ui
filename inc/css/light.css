@@ -2191,3 +2191,14 @@ li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li
     z-index: 5;
     position: relative;
 }
+#bbpress-forums .bbp-no-reply .bbp-template-notice, #bbpress-forums .bbp-no-reply .bbp-template-notice p {
+    background: transparent none repeat scroll 0% 0% !important;
+    border: 0px none !important;
+    font-size: 25px !important;
+    text-align: center;
+    font-weight: 600;
+}
+.reply, .bbp-reply-position-1.topic {
+    border-left: 2px solid #AAA !important;
+    border-top: 0px none !important;
+}
