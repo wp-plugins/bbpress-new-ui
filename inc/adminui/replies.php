@@ -286,7 +286,7 @@ class BBP_Admin_Replies {
 	 */
 	public function register_plugin_styles() {
 		$css_path = plugin_dir_path( __FILE__ ) . '/css/style-replies.css';
-	    wp_enqueue_style( 'bbp_admin_replies_style', plugin_dir_url( __FILE__ ) . '/css/style-replies.css', filemtime( $css_path ) );
+	    wp_enqueue_style( 'bbp_admin_replies_style', plugin_dir_url( __FILE__ ) . '/css/style-replies.css' );
 	}
 
 } // end class

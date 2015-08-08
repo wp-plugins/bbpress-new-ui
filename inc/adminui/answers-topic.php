@@ -288,7 +288,7 @@ class BBP_Admin_Topics {
 	 */
 	function register_plugin_styles() {
 		$css_path = plugin_dir_path( __FILE__ ) . '/css/style-topics.css';
-	    wp_enqueue_style( 'bbp_admin_topics_style', plugin_dir_url( __FILE__ ) . '/css/style-topics.css', filemtime( $css_path ) );
+	    wp_enqueue_style( 'bbp_admin_topics_style', plugin_dir_url( __FILE__ ) . '/css/style-topics.css' );
 	}
 
 } // end class

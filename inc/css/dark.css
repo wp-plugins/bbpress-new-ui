@@ -2307,3 +2307,11 @@ li.bbp-forum-freshness, li.bbp-topic-freshness {
 #bbpress-forums .forum li.bbp-forum-freshness, li.bbp-topic-freshness {
     width: 35% !important;
 }
+#bbpress-forums div#qt_bbp_reply_content_toolbar input {
+    background-color: rgba(0,0,0,0.5) !important;
+    border-radius: 3px !important;
+    padding: 5px 10px !important;
+}
+#bbpress-forums div.bbp-template-notice {
+    padding: 0 5px !important;
+}

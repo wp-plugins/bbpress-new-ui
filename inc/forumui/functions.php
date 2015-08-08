@@ -13,7 +13,6 @@ class BBP_New_Forum {
 
 		// show the "Private Reply?" checkbox
 		add_action( 'bbp_template_after_forums_loop', array( $this, 'divblock' ) );
-		add_action( 'bbp_theme_before_reply_author_details', array( $this, 'divblock1' ) );
 
 	} // end constructor
 
