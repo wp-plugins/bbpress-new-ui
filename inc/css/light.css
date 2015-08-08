@@ -1861,3 +1861,18 @@ body.reply-edit #bbpress-forums fieldset.bbp-form legend, body.topic-edit #bbpre
 .bbp-forum-inter-content {
     width: 65.2802%;
 }
+#bbpress-forums *, #bbpress-forums *::before, #bbpress-forums *::after {
+    box-sizing: border-box;
+}
+#bbpress-forums .topic .bbp-topic-freshness {
+    width: 34.5% !important;
+}
+li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li.bbp-topic-reply-count {
+    border: 0px none !important;
+}
+#bbpress-forums ul.topic li.bbp-topic-title {
+    height: 50px !important;
+}
+#bbpress-forums div.bbp-admin-topic.bbp-reply-position-1 a, #bbpress-forums div.bbp-admin-reply a {
+    color: #fff;
+}
