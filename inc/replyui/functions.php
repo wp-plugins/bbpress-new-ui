@@ -3,9 +3,8 @@ class BBP_New_Replies {
 
 	function __construct() {
 
-	add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
 	add_action( 'bbp_template_after_replies_loop', array( $this, 'bbpuidivblocktwo' ) );
-        add_action( 'bbp_theme_before_reply_form_content', array( $this, 'bbpuidivblockone' ) );
+    add_action( 'bbp_theme_before_reply_form_content', array( $this, 'bbpuidivblockone' ) );
 
 	} // end constructor
 
